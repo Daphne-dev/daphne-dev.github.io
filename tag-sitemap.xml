@@ -3,6 +3,27 @@
 
 
     <url>
+        <loc>https://daphne-dev.github.io/tags/IS-NULL/</loc>
+        <lastmod>2020-08-03T10:51:48.420Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/tags/%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4/</loc>
+        <lastmod>2020-08-03T10:51:48.420Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/tags/MySQL/</loc>
+        <lastmod>2020-08-03T10:51:48.420Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/tags/Asynchronous/</loc>
         <lastmod>2020-08-03T10:31:00.636Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -25,20 +46,6 @@
 
     <url>
         <loc>https://daphne-dev.github.io/tags/HOUR/</loc>
-        <lastmod>2020-08-03T09:33:08.977Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/tags/%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4/</loc>
-        <lastmod>2020-08-03T09:33:08.977Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/tags/MySQL/</loc>
         <lastmod>2020-08-03T09:33:08.977Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

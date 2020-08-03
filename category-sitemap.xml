@@ -8,22 +8,22 @@
     </url>
 
     <url>
-        <loc>https://daphne-dev.github.io/categories/Node-js/</loc>
-        <lastmod>2020-08-03T10:31:00.636Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://daphne-dev.github.io/categories/%25EC%2595%258C%25EA%25B3%25A0%25EB%25A6%25AC%25EC%25A6%2598-SQL/SQL/</loc>
-        <lastmod>2020-08-03T09:33:08.977Z</lastmod>
+        <lastmod>2020-08-03T10:51:48.420Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://daphne-dev.github.io/categories/%25EC%2595%258C%25EA%25B3%25A0%25EB%25A6%25AC%25EC%25A6%2598-SQL/</loc>
-        <lastmod>2020-08-03T09:33:08.977Z</lastmod>
+        <lastmod>2020-08-03T10:51:48.420Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/categories/Node-js/</loc>
+        <lastmod>2020-08-03T10:31:00.636Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
