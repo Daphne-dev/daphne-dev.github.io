@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/08/04/bitaalgo-004/</loc>
+        <lastmod>2020-08-06T04:30:32.988Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/08/04/bitaalgo-003/</loc>
+        <lastmod>2020-08-06T04:23:57.097Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/08/04/algorithm-sql-020/</loc>
         <lastmod>2020-08-06T03:49:08.706Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,14 +34,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/07/28/algorithm-sql-004/</loc>
         <lastmod>2020-08-06T03:46:20.535Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/08/04/bitaalgo-003/</loc>
-        <lastmod>2020-08-06T03:42:43.701Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -170,14 +178,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/08/03/nodejs-004/</loc>
         <lastmod>2020-08-05T12:53:17.976Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/08/04/bitaalgo-004/</loc>
-        <lastmod>2020-08-05T05:55:51.382Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
