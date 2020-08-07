@@ -9,8 +9,48 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Thu, 06 Aug 2020 02:59:48 GMT</pubDate>
+    <pubDate>Fri, 07 Aug 2020 04:56:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[프로그래머스] SQL Level 2 이름에 el이 들어가는 동물 찾기 MySQL</title>
+      <link>https://daphne-dev.github.io/2020/08/06/algorithm-sql-024/</link>
+      <guid>https://daphne-dev.github.io/2020/08/06/algorithm-sql-024/</guid>
+      <pubDate>Thu, 06 Aug 2020 19:48:21 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h3 id=&quot;이름에-el이-들어가는-동물-찾기&quot;&gt;&lt;a href=&quot;#이름에-el이-들어가는-동물-찾기&quot; class=&quot;headerlink&quot; title=&quot;이름에 el이 들어가는 동물 찾기&quot;&gt;&lt;/a&gt;이름에 el이 들어가는 동물 찾기&lt;/h3&gt;&lt;p&gt;&lt;img s
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<h3 id="이름에-el이-들어가는-동물-찾기"><a href="#이름에-el이-들어가는-동물-찾기" class="headerlink" title="이름에 el이 들어가는 동물 찾기"></a>이름에 el이 들어가는 동물 찾기</h3><p><img src="/image/sql_024.PNG" alt=""><br><img src="/image/sql_024-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ANIMAL_ID, <span class="keyword">NAME</span></span><br><span class="line"><span class="keyword">FROM</span> ANIAML_INS</span><br><span class="line"><span class="keyword">WHERE</span> ANIMAL_TYPE <span class="keyword">IN</span> (<span class="string">'Dog'</span>) <span class="keyword">AND</span> <span class="keyword">NAME</span> <span class="keyword">LIKE</span> <span class="string">'%EL%'</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">NAME</span></span><br></pre></td></tr></table></figure><p>WHERE절을 사용하여 개(Dog)이면서 이름이 EL이 포함된 것을 조회하면된다.<br>이름순으로 조회하라는 조건이 있으므로<br>ORDER BY절을 통해 정렬한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59047">https://programmers.co.kr/learn/courses/30/lessons/59047</a></p>]]></content:encoded>
+      
+      <comments>https://daphne-dev.github.io/2020/08/06/algorithm-sql-024/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>[프로그래머스] SQL Level 2 루시와 엘라 찾기 MySQL</title>
+      <link>https://daphne-dev.github.io/2020/08/06/algorithm-sql-023/</link>
+      <guid>https://daphne-dev.github.io/2020/08/06/algorithm-sql-023/</guid>
+      <pubDate>Thu, 06 Aug 2020 19:43:53 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h3 id=&quot;루시와-엘라-찾기&quot;&gt;&lt;a href=&quot;#루시와-엘라-찾기&quot; class=&quot;headerlink&quot; title=&quot;루시와 엘라 찾기&quot;&gt;&lt;/a&gt;루시와 엘라 찾기&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/image/sql_023.PNG&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<h3 id="루시와-엘라-찾기"><a href="#루시와-엘라-찾기" class="headerlink" title="루시와 엘라 찾기"></a>루시와 엘라 찾기</h3><p><img src="/image/sql_023.PNG" alt=""><br><img src="/image/sql_023-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ANIMAL_ID, <span class="keyword">NAME</span>, SEX_UPON_INTAKE</span><br><span class="line"><span class="keyword">FROM</span> ANIAML_INS</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">NAME</span> <span class="keyword">IN</span> (<span class="string">'Lucy'</span>, <span class="string">'Ella'</span>, <span class="string">'Pickle'</span>, Rogan<span class="string">', '</span>Sabrina<span class="string">', '</span>Mitty<span class="string">')</span></span><br><span class="line"><span class="string">ORDER BY ANIMAL_ID</span></span><br></pre></td></tr></table></figure><p>WHERE 절의 IN을 활용하여 조회한다.<br>아이디순으로 조회해달라는 조건이 있으므로 ORDER BY를 통해 아이디순으로 정렬한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59046">https://programmers.co.kr/learn/courses/30/lessons/59046</a></p>]]></content:encoded>
+      
+      <comments>https://daphne-dev.github.io/2020/08/06/algorithm-sql-023/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[프로그래머스] SQL Level 4 보호소에서 중성화한 동물 MySQL</title>
@@ -371,46 +411,6 @@
       <content:encoded><![CDATA[<h3 id="동물-수-구하기"><a href="#동물-수-구하기" class="headerlink" title="동물 수 구하기"></a>동물 수 구하기</h3><p><img src="/image/sql_010.PNG" alt=""><br><img src="/image/sql_010-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">COUNT</span>(*) <span class="keyword">AS</span> <span class="keyword">count</span></span><br><span class="line"><span class="keyword">FROM</span> ANIMAL_INS</span><br></pre></td></tr></table></figure><p>COUNT를 활용하여 모든 동물의 수를 구한 뒤 AS를 사용하여 컬럼 값을 count로 변경한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59406">https://programmers.co.kr/learn/courses/30/lessons/59406</a></p>]]></content:encoded>
       
       <comments>https://daphne-dev.github.io/2020/07/31/algorithm-sql-010/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[프로그래머스] SQL Level 2 최솟값 구하기 MySQL</title>
-      <link>https://daphne-dev.github.io/2020/07/31/algorithm-sql-009/</link>
-      <guid>https://daphne-dev.github.io/2020/07/31/algorithm-sql-009/</guid>
-      <pubDate>Fri, 31 Jul 2020 01:04:19 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;h3 id=&quot;최솟값-구하기&quot;&gt;&lt;a href=&quot;#최솟값-구하기&quot; class=&quot;headerlink&quot; title=&quot;최솟값 구하기&quot;&gt;&lt;/a&gt;최솟값 구하기&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/image/sql_009.PNG&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=
-        
-      
-      </description>
-      
-      
-      <content:encoded><![CDATA[<h3 id="최솟값-구하기"><a href="#최솟값-구하기" class="headerlink" title="최솟값 구하기"></a>최솟값 구하기</h3><p><img src="/image/sql_009.PNG" alt=""><br><img src="/image/sql_009-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">MIN</span>(DATETIME) <span class="keyword">AS</span> 시간</span><br><span class="line"><span class="keyword">FROM</span> ANIMAL_INS</span><br></pre></td></tr></table></figure><p>MIN을 활용하여 DATETIME의 가장 작은 값을 구한 뒤 AS를 사용하여 컬럼 값을 DATETIME에서 시간으로 변경한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59038">https://programmers.co.kr/learn/courses/30/lessons/59038</a></p>]]></content:encoded>
-      
-      <comments>https://daphne-dev.github.io/2020/07/31/algorithm-sql-009/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[프로그래머스] SQL Level 1 최댓값 구하기 MySQL</title>
-      <link>https://daphne-dev.github.io/2020/07/30/algorithm-sql-008/</link>
-      <guid>https://daphne-dev.github.io/2020/07/30/algorithm-sql-008/</guid>
-      <pubDate>Thu, 30 Jul 2020 02:46:30 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;h3 id=&quot;최댓값-구하기&quot;&gt;&lt;a href=&quot;#최댓값-구하기&quot; class=&quot;headerlink&quot; title=&quot;최댓값 구하기&quot;&gt;&lt;/a&gt;최댓값 구하기&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/image/sql_008.PNG&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=
-        
-      
-      </description>
-      
-      
-      <content:encoded><![CDATA[<h3 id="최댓값-구하기"><a href="#최댓값-구하기" class="headerlink" title="최댓값 구하기"></a>최댓값 구하기</h3><p><img src="/image/sql_008.PNG" alt=""><br><img src="/image/sql_008-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">MAX</span>(DATETIME) <span class="keyword">AS</span> 시간</span><br><span class="line"><span class="keyword">FROM</span> ANIMAL_INS</span><br></pre></td></tr></table></figure><p>MAX를 활용하여 DATETIME의 가장 큰 값을 구한 뒤 AS를 사용하여 컬럼 값을 DATETIME에서 시간으로 변경한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59415">https://programmers.co.kr/learn/courses/30/lessons/59415</a></p>]]></content:encoded>
-      
-      <comments>https://daphne-dev.github.io/2020/07/30/algorithm-sql-008/#disqus_thread</comments>
     </item>
     
   </channel>
