@@ -9,8 +9,48 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Fri, 07 Aug 2020 04:56:26 GMT</pubDate>
+    <pubDate>Sat, 08 Aug 2020 14:56:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[프로그래머스] SQL Level 3 오랜 기간 보호한 동물(2) MySQL</title>
+      <link>https://daphne-dev.github.io/2020/08/08/algorithm-sql-026/</link>
+      <guid>https://daphne-dev.github.io/2020/08/08/algorithm-sql-026/</guid>
+      <pubDate>Sat, 08 Aug 2020 05:37:40 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h3 id=&quot;오랜-기간-보호한-동물-2&quot;&gt;&lt;a href=&quot;#오랜-기간-보호한-동물-2&quot; class=&quot;headerlink&quot; title=&quot;오랜 기간 보호한 동물(2)&quot;&gt;&lt;/a&gt;오랜 기간 보호한 동물(2)&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/image/sql
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<h3 id="오랜-기간-보호한-동물-2"><a href="#오랜-기간-보호한-동물-2" class="headerlink" title="오랜 기간 보호한 동물(2)"></a>오랜 기간 보호한 동물(2)</h3><p><img src="/image/sql_026.PNG" alt=""><br><img src="/image/sql_026-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> OUTS.ANIMAL_ID, OUTS.NAME</span><br><span class="line"><span class="keyword">FROM</span> ANIAML_INS INS</span><br><span class="line"><span class="keyword">RIGHT</span> <span class="keyword">JOIN</span> ANIMAL_OUTS OUTS <span class="keyword">ON</span> INS.ANIMAL_ID = OUTS.ANIMAL_ID</span><br><span class="line"><span class="keyword">WHERE</span> OUTS.DATETIME <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="literal">NULL</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> OUTS.DATETIME - INS.DATETIME <span class="keyword">DESC</span></span><br><span class="line"><span class="keyword">LIMIT</span> <span class="number">2</span></span><br></pre></td></tr></table></figure><p>입양을 간 날짜 OUTS.DATETIME에 처음 보호를 시작한 날짜 INS.DATETIME를 뺀 날짜가 보호 기간이 될 것이다.<br>ORDER BY 를 사용하여 가장 보호 기간이 오래된 동물을 찾는다.<br>LIMIT를 사용하여 그 중에서 최상위 2개까지만 조회한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59411">https://programmers.co.kr/learn/courses/30/lessons/59411</a></p>]]></content:encoded>
+      
+      <comments>https://daphne-dev.github.io/2020/08/08/algorithm-sql-026/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>[프로그래머스] SQL Level 2 중성화 여부 파악하기 MySQL</title>
+      <link>https://daphne-dev.github.io/2020/08/08/algorithm-sql-025/</link>
+      <guid>https://daphne-dev.github.io/2020/08/08/algorithm-sql-025/</guid>
+      <pubDate>Sat, 08 Aug 2020 05:37:28 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h3 id=&quot;중성화-여부-파악하기&quot;&gt;&lt;a href=&quot;#중성화-여부-파악하기&quot; class=&quot;headerlink&quot; title=&quot;중성화 여부 파악하기&quot;&gt;&lt;/a&gt;중성화 여부 파악하기&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/image/sql_025.PNG&quot; alt=
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<h3 id="중성화-여부-파악하기"><a href="#중성화-여부-파악하기" class="headerlink" title="중성화 여부 파악하기"></a>중성화 여부 파악하기</h3><p><img src="/image/sql_025.PNG" alt=""><br><img src="/image/sql_025-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ANIMAL_ID, <span class="keyword">NAME</span>,</span><br><span class="line"><span class="keyword">CASE</span></span><br><span class="line"><span class="keyword">WHEN</span> SEX_UPON_INTAKE <span class="keyword">NOT</span> <span class="keyword">LIKE</span> <span class="string">"Intact%"</span></span><br><span class="line"><span class="keyword">THEN</span> <span class="string">"O"</span></span><br><span class="line"><span class="keyword">ELSE</span> <span class="string">"X"</span></span><br><span class="line"><span class="keyword">FROM</span> ANIAML_INS</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> ANIMAL_ID</span><br></pre></td></tr></table></figure><p>CASE ~ WHEN ~ THEN ~ ELSE ~ END를 사용하는 문제이다.<br>NOT LIKE를 사용하여 Intact가 포함된 단어이면 X, 아니면 O로 표시한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59409">https://programmers.co.kr/learn/courses/30/lessons/59409</a></p>]]></content:encoded>
+      
+      <comments>https://daphne-dev.github.io/2020/08/08/algorithm-sql-025/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[프로그래머스] SQL Level 2 이름에 el이 들어가는 동물 찾기 MySQL</title>
@@ -371,46 +411,6 @@
       <content:encoded><![CDATA[<h3 id="고양이와-개는-몇-마리-있을까"><a href="#고양이와-개는-몇-마리-있을까" class="headerlink" title="고양이와 개는 몇 마리 있을까"></a>고양이와 개는 몇 마리 있을까</h3><p><img src="/image/sql_012.PNG" alt=""><br><img src="/image/sql_012-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ANIMAL_TYPE, <span class="keyword">COUNT</span>(ANIMAL_TYPE) <span class="keyword">AS</span> <span class="keyword">count</span></span><br><span class="line"><span class="keyword">FROM</span> ANIMAL_INS</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> ANIMAL_TYPE</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> ANIMAL_TYPE</span><br></pre></td></tr></table></figure><p>GROUP BY 절을 활용하여 고양이와 개를 그룹별로 분리한 다음, COUNT를 활용하여 수를 세면 된다.<br>이때 GROUP BY 절만 사용해도 예시와 같이 Cat, Dog 순서로 나열이 되지만 문제의 조건에 고양이를 개보다 먼저 조회하라는 조건이 있기 때문에 GROUP BY 절만 활용하면 틀렸다고 결과가 나온다. ORDER BY 절을 활용하여 정렬한다. </p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59040">https://programmers.co.kr/learn/courses/30/lessons/59040</a></p>]]></content:encoded>
       
       <comments>https://daphne-dev.github.io/2020/08/01/algorithm-sql-012/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[프로그래머스] SQL Level 2 중복 제거하기 MySQL</title>
-      <link>https://daphne-dev.github.io/2020/08/01/algorithm-sql-011/</link>
-      <guid>https://daphne-dev.github.io/2020/08/01/algorithm-sql-011/</guid>
-      <pubDate>Sat, 01 Aug 2020 01:27:56 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;h3 id=&quot;중복-제거하기&quot;&gt;&lt;a href=&quot;#중복-제거하기&quot; class=&quot;headerlink&quot; title=&quot;중복 제거하기&quot;&gt;&lt;/a&gt;중복 제거하기&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/image/sql_011.PNG&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=
-        
-      
-      </description>
-      
-      
-      <content:encoded><![CDATA[<h3 id="중복-제거하기"><a href="#중복-제거하기" class="headerlink" title="중복 제거하기"></a>중복 제거하기</h3><p><img src="/image/sql_011.PNG" alt=""><br><img src="/image/sql_011-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">COUNT</span>(<span class="keyword">DISTINCT</span> <span class="keyword">NAME</span>) <span class="keyword">AS</span> <span class="keyword">count</span></span><br><span class="line"><span class="keyword">FROM</span> ANIMAL_INS</span><br></pre></td></tr></table></figure><p>DISTINCT를 활용하면 중복되는 데이터를 제외해준다. 이를 이용해 중복되는 NAME 값을 제외하고, 이 값을 집계함수인 COUNT를 이용해 NULL을 제외한 이름만을 카운트한다. </p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59408">https://programmers.co.kr/learn/courses/30/lessons/59408</a></p>]]></content:encoded>
-      
-      <comments>https://daphne-dev.github.io/2020/08/01/algorithm-sql-011/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[프로그래머스] SQL Level 2 동물 수 구하기 MySQL</title>
-      <link>https://daphne-dev.github.io/2020/07/31/algorithm-sql-010/</link>
-      <guid>https://daphne-dev.github.io/2020/07/31/algorithm-sql-010/</guid>
-      <pubDate>Fri, 31 Jul 2020 01:04:29 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;h3 id=&quot;동물-수-구하기&quot;&gt;&lt;a href=&quot;#동물-수-구하기&quot; class=&quot;headerlink&quot; title=&quot;동물 수 구하기&quot;&gt;&lt;/a&gt;동물 수 구하기&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/image/sql_010.PNG&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img 
-        
-      
-      </description>
-      
-      
-      <content:encoded><![CDATA[<h3 id="동물-수-구하기"><a href="#동물-수-구하기" class="headerlink" title="동물 수 구하기"></a>동물 수 구하기</h3><p><img src="/image/sql_010.PNG" alt=""><br><img src="/image/sql_010-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">COUNT</span>(*) <span class="keyword">AS</span> <span class="keyword">count</span></span><br><span class="line"><span class="keyword">FROM</span> ANIMAL_INS</span><br></pre></td></tr></table></figure><p>COUNT를 활용하여 모든 동물의 수를 구한 뒤 AS를 사용하여 컬럼 값을 count로 변경한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59406">https://programmers.co.kr/learn/courses/30/lessons/59406</a></p>]]></content:encoded>
-      
-      <comments>https://daphne-dev.github.io/2020/07/31/algorithm-sql-010/#disqus_thread</comments>
     </item>
     
   </channel>
