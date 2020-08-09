@@ -9,8 +9,48 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Sat, 08 Aug 2020 14:56:08 GMT</pubDate>
+    <pubDate>Sun, 09 Aug 2020 13:37:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[비타알고] 택배왕 안홍자(★3)</title>
+      <link>https://daphne-dev.github.io/2020/08/09/bitaalgo-005/</link>
+      <guid>https://daphne-dev.github.io/2020/08/09/bitaalgo-005/</guid>
+      <pubDate>Sun, 09 Aug 2020 04:08:55 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;*이 글은 구름edu의 위클리 비타알고 시즌2 코딩테스트 대비 입문편을 기반으로 쓰여진 글입니다.&lt;br&gt;출처 : &lt;a href=&quot;https://edu.goorm.io/learn/lecture/15551/%EC%9C%84%ED%81%B4%EB%A6
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<p>*이 글은 구름edu의 위클리 비타알고 시즌2 코딩테스트 대비 입문편을 기반으로 쓰여진 글입니다.<br>출처 : <a href="https://edu.goorm.io/learn/lecture/15551/%EC%9C%84%ED%81%B4%EB%A6%AC-%EB%B9%84%ED%83%80%EC%95%8C%EA%B3%A0-%EC%8B%9C%EC%A6%8C2-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8C%80%EB%B9%84-%EC%9E%85%EB%AC%B8%ED%8E%B8">위클리 비타알고 시즌2 코딩테스트 대비 입문편</a></p><h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><p><img src="/image/bita_005.PNG" alt=""><br><img src="/image/bita_005-1.PNG" alt=""></p><h3 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">N &#x3D; int(input())</span><br><span class="line">pay &#x3D; [] </span><br><span class="line">check &#x3D; [False] * 11 </span><br><span class="line">ans &#x3D; 0</span><br><span class="line">for i in range(N): # 지역별 보수 저장</span><br><span class="line">pay.append(list(map(int, input().split()))) </span><br><span class="line"></span><br><span class="line">def go(s, sum):</span><br><span class="line">global ans, pay, check, N</span><br><span class="line">if s &#x3D;&#x3D; start and sum: # 배달을 나간 후 다시 시작지점으로 돌아왔을 경우</span><br><span class="line">ans &#x3D; max(ans, sum) # 이전의 보수와 비교해서 최대 보수 갱신</span><br><span class="line">return</span><br><span class="line">for i in range(N):</span><br><span class="line">if check[i]: # 한 번 방문했던 지역인지 확인, 이미 방문했다면 True, 안했다면 False</span><br><span class="line">continue</span><br><span class="line">if pay[s][i]:</span><br><span class="line">check[i] &#x3D; True</span><br><span class="line">go(i, sum + pay[s][i])</span><br><span class="line">check[i] &#x3D; False</span><br><span class="line"></span><br><span class="line">for i in range(N): # 출발 지역 선택 </span><br><span class="line">start &#x3D; i</span><br><span class="line">go(i,0)</span><br><span class="line"></span><br><span class="line">print(ans)</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      <comments>https://daphne-dev.github.io/2020/08/09/bitaalgo-005/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>[프로그래머스] SQL Level 2 DATETIME에서 DATE로 형 변환 MySQL</title>
+      <link>https://daphne-dev.github.io/2020/08/08/algorithm-sql-027/</link>
+      <guid>https://daphne-dev.github.io/2020/08/08/algorithm-sql-027/</guid>
+      <pubDate>Sat, 08 Aug 2020 23:04:56 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h3 id=&quot;DATETIME에서-DATE로-형-변환&quot;&gt;&lt;a href=&quot;#DATETIME에서-DATE로-형-변환&quot; class=&quot;headerlink&quot; title=&quot;DATETIME에서 DATE로 형 변환&quot;&gt;&lt;/a&gt;DATETIME에서 DATE로 형 변환&lt;/
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<h3 id="DATETIME에서-DATE로-형-변환"><a href="#DATETIME에서-DATE로-형-변환" class="headerlink" title="DATETIME에서 DATE로 형 변환"></a>DATETIME에서 DATE로 형 변환</h3><p><img src="/image/sql_027.PNG" alt=""><br><img src="/image/sql_027-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ANIMAL_ID, <span class="keyword">NAME</span>, <span class="keyword">DATE_FORMAT</span>(DATETIME, <span class="string">'%Y-%m-%d'</span>) <span class="keyword">AS</span> <span class="string">"날짜"</span></span><br><span class="line"><span class="keyword">FROM</span> ANIAML_INS INS</span><br></pre></td></tr></table></figure><p>DATE_FORMAT 함수를 사용하면된다.</p><h3 id="DATE-FORMAT-함수"><a href="#DATE-FORMAT-함수" class="headerlink" title="DATE_FORMAT 함수"></a>DATE_FORMAT 함수</h3><p>주어진 시간에 대한 데이터를 원하는 형태로 변환하는 함수이다.</p><blockquote><p>DATE_FORMAT(date, format)<br><a href="https://www.w3schools.com/sql/func_mysql_date_format.asp">DATE_FORMAT 참고</a></p></blockquote><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59414">https://programmers.co.kr/learn/courses/30/lessons/59414</a></p>]]></content:encoded>
+      
+      <comments>https://daphne-dev.github.io/2020/08/08/algorithm-sql-027/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[프로그래머스] SQL Level 3 오랜 기간 보호한 동물(2) MySQL</title>
@@ -47,7 +87,7 @@
       </description>
       
       
-      <content:encoded><![CDATA[<h3 id="중성화-여부-파악하기"><a href="#중성화-여부-파악하기" class="headerlink" title="중성화 여부 파악하기"></a>중성화 여부 파악하기</h3><p><img src="/image/sql_025.PNG" alt=""><br><img src="/image/sql_025-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ANIMAL_ID, <span class="keyword">NAME</span>,</span><br><span class="line"><span class="keyword">CASE</span></span><br><span class="line"><span class="keyword">WHEN</span> SEX_UPON_INTAKE <span class="keyword">NOT</span> <span class="keyword">LIKE</span> <span class="string">"Intact%"</span></span><br><span class="line"><span class="keyword">THEN</span> <span class="string">"O"</span></span><br><span class="line"><span class="keyword">ELSE</span> <span class="string">"X"</span></span><br><span class="line"><span class="keyword">FROM</span> ANIAML_INS</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> ANIMAL_ID</span><br></pre></td></tr></table></figure><p>CASE ~ WHEN ~ THEN ~ ELSE ~ END를 사용하는 문제이다.<br>NOT LIKE를 사용하여 Intact가 포함된 단어이면 X, 아니면 O로 표시한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59409">https://programmers.co.kr/learn/courses/30/lessons/59409</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<h3 id="중성화-여부-파악하기"><a href="#중성화-여부-파악하기" class="headerlink" title="중성화 여부 파악하기"></a>중성화 여부 파악하기</h3><p><img src="/image/sql_025.PNG" alt=""><br><img src="/image/sql_025-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ANIMAL_ID, <span class="keyword">NAME</span>,</span><br><span class="line"><span class="keyword">CASE</span></span><br><span class="line"><span class="keyword">WHEN</span> SEX_UPON_INTAKE <span class="keyword">NOT</span> <span class="keyword">LIKE</span> <span class="string">"Intact%"</span></span><br><span class="line"><span class="keyword">THEN</span> <span class="string">"O"</span></span><br><span class="line"><span class="keyword">ELSE</span> <span class="string">"X"</span></span><br><span class="line"><span class="keyword">END</span> <span class="keyword">AS</span> <span class="string">"중성화"</span></span><br><span class="line"><span class="keyword">FROM</span> ANIAML_INS</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> ANIMAL_ID</span><br></pre></td></tr></table></figure><p>CASE ~ WHEN ~ THEN ~ ELSE ~ END를 사용하는 문제이다.<br>NOT LIKE를 사용하여 Intact가 포함된 단어이면 X, 아니면 O로 표시한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59409">https://programmers.co.kr/learn/courses/30/lessons/59409</a></p>]]></content:encoded>
       
       <comments>https://daphne-dev.github.io/2020/08/08/algorithm-sql-025/#disqus_thread</comments>
     </item>
@@ -371,46 +411,6 @@
       <content:encoded><![CDATA[<h3 id="입양-시각-구하기-1"><a href="#입양-시각-구하기-1" class="headerlink" title="입양 시각 구하기(1)"></a>입양 시각 구하기(1)</h3><p><img src="/image/sql_014.PNG" alt=""><br><img src="/image/sql_014-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">HOUR</span>(DATETIME) <span class="keyword">AS</span> <span class="keyword">HOUR</span>, <span class="keyword">COUNT</span>(DATETIME) <span class="keyword">AS</span> <span class="keyword">COUNT</span></span><br><span class="line"><span class="keyword">FROM</span> ANIMAL_OUTS</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="keyword">HOUR</span></span><br><span class="line"><span class="keyword">HAVING</span> <span class="keyword">HOUR</span> &gt;= <span class="number">9</span> <span class="keyword">and</span> <span class="keyword">HOUR</span> &lt; <span class="number">20</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">HOUR</span></span><br></pre></td></tr></table></figure><p>SELECT에서 HOUR(DATETIME)을 HOUR로 별칭(ALIAS)으로 지정한다.<br>HOUR는 MySQL에서 해당 날짜에 대해 시간만을 반환한다.<br>GROUP BY로 그룹화한 뒤 HAVING절을 이용해 09:00부터 19:59까지 시간을 지정하고 ORDER BY를 통해 시간대 순으로 정렬한다.  </p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59412">https://programmers.co.kr/learn/courses/30/lessons/59412</a></p>]]></content:encoded>
       
       <comments>https://daphne-dev.github.io/2020/08/02/algorithm-sql-014/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[프로그래머스] SQL Level 2 동명 동물 수 찾기 MySQL</title>
-      <link>https://daphne-dev.github.io/2020/08/02/algorithm-sql-013/</link>
-      <guid>https://daphne-dev.github.io/2020/08/02/algorithm-sql-013/</guid>
-      <pubDate>Sun, 02 Aug 2020 04:42:00 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;h3 id=&quot;동명-동물-수-찾기&quot;&gt;&lt;a href=&quot;#동명-동물-수-찾기&quot; class=&quot;headerlink&quot; title=&quot;동명 동물 수 찾기&quot;&gt;&lt;/a&gt;동명 동물 수 찾기&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/image/sql_013.PNG&quot; alt=&quot;&quot;&gt;&lt;
-        
-      
-      </description>
-      
-      
-      <content:encoded><![CDATA[<h3 id="동명-동물-수-찾기"><a href="#동명-동물-수-찾기" class="headerlink" title="동명 동물 수 찾기"></a>동명 동물 수 찾기</h3><p><img src="/image/sql_013.PNG" alt=""><br><img src="/image/sql_013-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">NAME</span>, <span class="keyword">COUNT</span>(<span class="keyword">NAME</span>) <span class="keyword">AS</span> <span class="keyword">COUNT</span></span><br><span class="line"><span class="keyword">FROM</span> ANIMAL_INS</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="keyword">NAME</span></span><br><span class="line"><span class="keyword">HAVING</span> <span class="keyword">COUNT</span>(<span class="keyword">NAME</span>) &gt;= <span class="number">2</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">NAME</span></span><br></pre></td></tr></table></figure><p>GROUP BY절을 통해 NAME에서 공통적인 데이터끼리 묶은 뒤 HAVING절로 이 중에서 2이상인 그룹만 추출한다. 그 뒤 COUNT로 최종적으로 남은 데이터들을 count 한 뒤 ORDER BY로 NAME 순으로 정렬한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59041">https://programmers.co.kr/learn/courses/30/lessons/59041</a></p>]]></content:encoded>
-      
-      <comments>https://daphne-dev.github.io/2020/08/02/algorithm-sql-013/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[프로그래머스] SQL Level 2 고양이와 개는 몇 마리 있을까 MySQL</title>
-      <link>https://daphne-dev.github.io/2020/08/01/algorithm-sql-012/</link>
-      <guid>https://daphne-dev.github.io/2020/08/01/algorithm-sql-012/</guid>
-      <pubDate>Sat, 01 Aug 2020 01:39:17 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;h3 id=&quot;고양이와-개는-몇-마리-있을까&quot;&gt;&lt;a href=&quot;#고양이와-개는-몇-마리-있을까&quot; class=&quot;headerlink&quot; title=&quot;고양이와 개는 몇 마리 있을까&quot;&gt;&lt;/a&gt;고양이와 개는 몇 마리 있을까&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/ima
-        
-      
-      </description>
-      
-      
-      <content:encoded><![CDATA[<h3 id="고양이와-개는-몇-마리-있을까"><a href="#고양이와-개는-몇-마리-있을까" class="headerlink" title="고양이와 개는 몇 마리 있을까"></a>고양이와 개는 몇 마리 있을까</h3><p><img src="/image/sql_012.PNG" alt=""><br><img src="/image/sql_012-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ANIMAL_TYPE, <span class="keyword">COUNT</span>(ANIMAL_TYPE) <span class="keyword">AS</span> <span class="keyword">count</span></span><br><span class="line"><span class="keyword">FROM</span> ANIMAL_INS</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> ANIMAL_TYPE</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> ANIMAL_TYPE</span><br></pre></td></tr></table></figure><p>GROUP BY 절을 활용하여 고양이와 개를 그룹별로 분리한 다음, COUNT를 활용하여 수를 세면 된다.<br>이때 GROUP BY 절만 사용해도 예시와 같이 Cat, Dog 순서로 나열이 되지만 문제의 조건에 고양이를 개보다 먼저 조회하라는 조건이 있기 때문에 GROUP BY 절만 활용하면 틀렸다고 결과가 나온다. ORDER BY 절을 활용하여 정렬한다. </p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59040">https://programmers.co.kr/learn/courses/30/lessons/59040</a></p>]]></content:encoded>
-      
-      <comments>https://daphne-dev.github.io/2020/08/01/algorithm-sql-012/#disqus_thread</comments>
     </item>
     
   </channel>
