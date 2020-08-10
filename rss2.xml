@@ -9,8 +9,30 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Sun, 09 Aug 2020 13:37:17 GMT</pubDate>
+    <pubDate>Mon, 10 Aug 2020 12:36:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>JavaScript template literal</title>
+      <link>https://daphne-dev.github.io/2020/08/10/javascript-001/</link>
+      <guid>https://daphne-dev.github.io/2020/08/10/javascript-001/</guid>
+      <pubDate>Mon, 10 Aug 2020 03:32:07 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h3 id=&quot;간단-요약&quot;&gt;&lt;a href=&quot;#간단-요약&quot; class=&quot;headerlink&quot; title=&quot;간단 요약&quot;&gt;&lt;/a&gt;간단 요약&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Literal : 정보를 표현하는 방법, 기호&lt;/li&gt;
+&lt;li&gt;template literal:
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<h3 id="간단-요약"><a href="#간단-요약" class="headerlink" title="간단 요약"></a>간단 요약</h3><ul><li>Literal : 정보를 표현하는 방법, 기호</li><li>template literal:  <code></code> 을 사용해서 하나의 문자열처럼 사용가능하고 그 안에서 줄바꿈 가능</li><li><blockquote><p>따로 줄바꿈 \n 을 사용하지 않아도 된다는 장점 </p></blockquote></li><li>변수: ${ } 로 표현</li></ul>]]></content:encoded>
+      
+      <comments>https://daphne-dev.github.io/2020/08/10/javascript-001/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[비타알고] 택배왕 안홍자(★3)</title>
@@ -391,26 +413,6 @@
       <content:encoded><![CDATA[<h3 id="입양-시각-구하기-2"><a href="#입양-시각-구하기-2" class="headerlink" title="입양 시각 구하기(2)"></a>입양 시각 구하기(2)</h3><p><img src="/image/sql_015.PNG" alt=""><br><img src="/image/sql_015-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SET</span> @<span class="keyword">HOUR</span> = <span class="number">-1</span>;</span><br><span class="line"><span class="keyword">SELECT</span> (@<span class="keyword">HOUR</span> := @<span class="keyword">HOUR</span> + <span class="number">1</span>) <span class="keyword">AS</span> <span class="keyword">HOUR</span>, </span><br><span class="line">(<span class="keyword">SELECT</span> <span class="keyword">COUNT</span>(*) </span><br><span class="line"><span class="keyword">FROM</span> ANIMAL_OUTS</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">HOUR</span>(DATETIME) = @<span class="keyword">HOUR</span>) <span class="keyword">AS</span> <span class="keyword">COUNT</span></span><br><span class="line"><span class="keyword">FROM</span> ANIMAL_OUTS</span><br><span class="line"><span class="keyword">WHERE</span> @<span class="keyword">HOUR</span> &lt; <span class="number">23</span></span><br></pre></td></tr></table></figure><p>입양 시각 구하기(1) 문제와 유사하지만 0 ~ 23까지 모든 HOUR를 출력해야 한다.</p><blockquote><p>MySQL SET<br>SET @변수명 = ‘값’; </p></blockquote><p>HOUR 라는 변수에 -1을 대입한다.<br>@HOUR := @HOUR + 1을 통해 HOUR을 1씩 증가시켜 0 ~ 23까지 모든 시간에 대한 COUNT를 구한다.<br>WHERE 절을 통해 23시까지만 출력되게 한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59413">https://programmers.co.kr/learn/courses/30/lessons/59413</a></p>]]></content:encoded>
       
       <comments>https://daphne-dev.github.io/2020/08/02/algorithm-sql-015/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[프로그래머스] SQL Level 2 입양 시각 구하기(1) MySQL</title>
-      <link>https://daphne-dev.github.io/2020/08/02/algorithm-sql-014/</link>
-      <guid>https://daphne-dev.github.io/2020/08/02/algorithm-sql-014/</guid>
-      <pubDate>Sun, 02 Aug 2020 04:42:09 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;h3 id=&quot;입양-시각-구하기-1&quot;&gt;&lt;a href=&quot;#입양-시각-구하기-1&quot; class=&quot;headerlink&quot; title=&quot;입양 시각 구하기(1)&quot;&gt;&lt;/a&gt;입양 시각 구하기(1)&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/image/sql_014.PNG&quot; al
-        
-      
-      </description>
-      
-      
-      <content:encoded><![CDATA[<h3 id="입양-시각-구하기-1"><a href="#입양-시각-구하기-1" class="headerlink" title="입양 시각 구하기(1)"></a>입양 시각 구하기(1)</h3><p><img src="/image/sql_014.PNG" alt=""><br><img src="/image/sql_014-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">HOUR</span>(DATETIME) <span class="keyword">AS</span> <span class="keyword">HOUR</span>, <span class="keyword">COUNT</span>(DATETIME) <span class="keyword">AS</span> <span class="keyword">COUNT</span></span><br><span class="line"><span class="keyword">FROM</span> ANIMAL_OUTS</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="keyword">HOUR</span></span><br><span class="line"><span class="keyword">HAVING</span> <span class="keyword">HOUR</span> &gt;= <span class="number">9</span> <span class="keyword">and</span> <span class="keyword">HOUR</span> &lt; <span class="number">20</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">HOUR</span></span><br></pre></td></tr></table></figure><p>SELECT에서 HOUR(DATETIME)을 HOUR로 별칭(ALIAS)으로 지정한다.<br>HOUR는 MySQL에서 해당 날짜에 대해 시간만을 반환한다.<br>GROUP BY로 그룹화한 뒤 HAVING절을 이용해 09:00부터 19:59까지 시간을 지정하고 ORDER BY를 통해 시간대 순으로 정렬한다.  </p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59412">https://programmers.co.kr/learn/courses/30/lessons/59412</a></p>]]></content:encoded>
-      
-      <comments>https://daphne-dev.github.io/2020/08/02/algorithm-sql-014/#disqus_thread</comments>
     </item>
     
   </channel>
