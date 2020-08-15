@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/08/15/boostcourse-2-1/</loc>
+        <lastmod>2020-08-15T11:52:47.558Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/08/11/bitaalgo-008/</loc>
+        <lastmod>2020-08-15T04:15:38.300Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/08/14/baekjoon-002/</loc>
         <lastmod>2020-08-15T03:00:44.339Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -306,14 +322,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/08/11/bitaalgo-009/</loc>
         <lastmod>2020-08-15T02:10:00.058Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/08/11/bitaalgo-008/</loc>
-        <lastmod>2020-08-12T02:45:18.583Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
