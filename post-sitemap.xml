@@ -8,6 +8,46 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/08/16/algo-002/</loc>
+        <lastmod>2020-08-16T14:29:22.735Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/08/13/algo-001/</loc>
+        <lastmod>2020-08-16T14:01:57.487Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/08/15/boostcourse-2-2/</loc>
+        <lastmod>2020-08-16T13:55:50.925Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/08/15/boostcourse-2-1/</loc>
+        <lastmod>2020-08-16T02:18:31.984Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/08/03/nodejs-004/</loc>
+        <lastmod>2020-08-15T12:10:35.370Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/07/29/boostcourse-PJT-A-1/</loc>
         <lastmod>2020-08-15T12:02:34.820Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -128,14 +168,6 @@
     </url>
 
     <url>
-        <loc>https://daphne-dev.github.io/2020/08/15/boostcourse-2-1/</loc>
-        <lastmod>2020-08-15T12:01:44.165Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://daphne-dev.github.io/2020/08/11/bitaalgo-008/</loc>
         <lastmod>2020-08-15T04:15:38.300Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -146,14 +178,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/08/14/baekjoon-002/</loc>
         <lastmod>2020-08-15T03:00:44.339Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/08/13/algo-001/</loc>
-        <lastmod>2020-08-15T02:16:33.846Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -450,14 +474,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/08/10/javascript-001/</loc>
         <lastmod>2020-08-10T12:39:07.118Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/08/03/nodejs-004/</loc>
-        <lastmod>2020-08-05T12:53:17.976Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
