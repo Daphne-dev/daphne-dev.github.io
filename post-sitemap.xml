@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://daphne-dev.github.io/2020/08/15/boostcourse-2-2/</loc>
-        <lastmod>2020-08-16T14:43:36.096Z</lastmod>
+        <lastmod>2020-08-17T07:17:51.118Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/08/16/algo-003/</loc>
+        <lastmod>2020-08-17T06:59:42.769Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
