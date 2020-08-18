@@ -9,11 +9,32 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Tue, 18 Aug 2020 05:22:14 GMT</pubDate>
+    <pubDate>Tue, 18 Aug 2020 10:22:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>[프로그래머스] 기지국 설치</title>
+      <title>[프로그래머스] Level 3 네트워크</title>
+      <link>https://daphne-dev.github.io/2020/08/18/algo-005/</link>
+      <guid>https://daphne-dev.github.io/2020/08/18/algo-005/</guid>
+      <pubDate>Tue, 18 Aug 2020 01:08:39 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/image/algo_005.PNG&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;입출력 예 설명&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;/image/algo_005-1.PNG&quot; alt=&quot;&quot;&gt; &lt;img src=&quot;/image/algo
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<p><img src="/image/algo_005.PNG" alt=""></p><p><strong>입출력 예 설명</strong><br><img src="/image/algo_005-1.PNG" alt=""> <img src="/image/algo_005-2.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> deque</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span><span class="params">(computers, check, i, n)</span>:</span></span><br><span class="line">    queue = deque()</span><br><span class="line">    queue.append(i)</span><br><span class="line">    <span class="keyword">while</span> queue:</span><br><span class="line">        node = queue.pop()</span><br><span class="line">        check[node] = <span class="literal">True</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(n):</span><br><span class="line">            <span class="comment"># 아직 해당 컴퓨터에 방문하지 않았고,</span></span><br><span class="line">            <span class="comment"># 현재 컴퓨터와 연결되어 있다면 큐에 추가 </span></span><br><span class="line">            <span class="keyword">if</span> check[j] == <span class="literal">False</span> <span class="keyword">and</span> computers[node][j] == <span class="number">1</span>:</span><br><span class="line">                queue.append(j)</span><br><span class="line">        </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">solution</span><span class="params">(n, computers)</span>:</span></span><br><span class="line">    answer = <span class="number">0</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># True면 해당 컴퓨터를 방문함</span></span><br><span class="line">    <span class="comment"># False면 아직 해당 컴퓨터를 방문하지 않음 </span></span><br><span class="line">    check = [<span class="literal">False</span>] * n</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        <span class="keyword">if</span> check[i] == <span class="literal">False</span>:</span><br><span class="line">            <span class="comment"># bfs 함수를 나오면 하나의 네트워크가 모두 탐색되었다는 의미</span></span><br><span class="line">            <span class="comment"># 따라서 bfs 함수에 들어간 횟수 = 네트워크의 개수</span></span><br><span class="line">            bfs(computers, check, i, n)</span><br><span class="line">            answer += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> answer</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      <comments>https://daphne-dev.github.io/2020/08/18/algo-005/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>[프로그래머스] Level 3 기지국 설치</title>
       <link>https://daphne-dev.github.io/2020/08/17/algo-004/</link>
       <guid>https://daphne-dev.github.io/2020/08/17/algo-004/</guid>
       <pubDate>Mon, 17 Aug 2020 19:47:35 GMT</pubDate>
@@ -412,28 +433,6 @@
       <content:encoded><![CDATA[<p><img src="/image/sql_024.PNG" alt=""><br><img src="/image/sql_024-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ANIMAL_ID, <span class="keyword">NAME</span></span><br><span class="line"><span class="keyword">FROM</span> ANIAML_INS</span><br><span class="line"><span class="keyword">WHERE</span> ANIMAL_TYPE <span class="keyword">IN</span> (<span class="string">'Dog'</span>) <span class="keyword">AND</span> <span class="keyword">NAME</span> <span class="keyword">LIKE</span> <span class="string">'%EL%'</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">NAME</span></span><br></pre></td></tr></table></figure><p>WHERE절을 사용하여 개(Dog)이면서 이름이 EL이 포함된 것을 조회하면된다.<br>이름순으로 조회하라는 조건이 있으므로<br>ORDER BY절을 통해 정렬한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59047">https://programmers.co.kr/learn/courses/30/lessons/59047</a></p>]]></content:encoded>
       
       <comments>https://daphne-dev.github.io/2020/08/06/algorithm-sql-024/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[프로그래머스] SQL Level 2 루시와 엘라 찾기 MySQL</title>
-      <link>https://daphne-dev.github.io/2020/08/06/algorithm-sql-023/</link>
-      <guid>https://daphne-dev.github.io/2020/08/06/algorithm-sql-023/</guid>
-      <pubDate>Thu, 06 Aug 2020 19:43:53 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/image/sql_023.PNG&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/image/sql_023-1.PNG&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;풀이&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight 
-        
-      
-      </description>
-      
-      
-      <content:encoded><![CDATA[<p><img src="/image/sql_023.PNG" alt=""><br><img src="/image/sql_023-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ANIMAL_ID, <span class="keyword">NAME</span>, SEX_UPON_INTAKE</span><br><span class="line"><span class="keyword">FROM</span> ANIAML_INS</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">NAME</span> <span class="keyword">IN</span> (<span class="string">'Lucy'</span>, <span class="string">'Ella'</span>, <span class="string">'Pickle'</span>, Rogan<span class="string">', '</span>Sabrina<span class="string">', '</span>Mitty<span class="string">')</span></span><br><span class="line"><span class="string">ORDER BY ANIMAL_ID</span></span><br></pre></td></tr></table></figure><p>WHERE 절의 IN을 활용하여 조회한다.<br>아이디순으로 조회해달라는 조건이 있으므로 ORDER BY를 통해 아이디순으로 정렬한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59046">https://programmers.co.kr/learn/courses/30/lessons/59046</a></p>]]></content:encoded>
-      
-      <comments>https://daphne-dev.github.io/2020/08/06/algorithm-sql-023/#disqus_thread</comments>
     </item>
     
   </channel>
