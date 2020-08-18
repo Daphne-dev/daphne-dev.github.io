@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/08/17/algo-004/</loc>
+        <lastmod>2020-08-18T05:22:14.498Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/08/16/javascript-002/</loc>
-        <lastmod>2020-08-17T08:37:20.753Z</lastmod>
+        <lastmod>2020-08-17T09:42:48.134Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +25,7 @@
 
     <url>
         <loc>https://daphne-dev.github.io/2020/08/10/javascript-001/</loc>
-        <lastmod>2020-08-17T08:34:28.113Z</lastmod>
+        <lastmod>2020-08-17T09:41:32.840Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
