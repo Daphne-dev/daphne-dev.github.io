@@ -9,8 +9,30 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Wed, 19 Aug 2020 14:15:36 GMT</pubDate>
+    <pubDate>Thu, 20 Aug 2020 06:07:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[프로그래머스] Level 3 단어 변환</title>
+      <link>https://daphne-dev.github.io/2020/08/19/algo-007/</link>
+      <guid>https://daphne-dev.github.io/2020/08/19/algo-007/</guid>
+      <pubDate>Wed, 19 Aug 2020 21:05:17 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/image/algo_007.PNG&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/image/algo_007-1.PNG&quot; alt=&quot;&quot;&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;풀이&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlig
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<p><img src="/image/algo_007.PNG" alt=""><br><img src="/image/algo_007-1.PNG" alt=""> </p><p><strong>풀이</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> deque</span><br><span class="line"></span><br><span class="line"><span class="comment"># 단어 비교 함수 </span></span><br><span class="line"><span class="comment"># 단어를 서로 비교했을 시 하나의 알파벳만 다를 경우 True를 리턴 </span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">transistable</span><span class="params">(a, b)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> sum((<span class="number">1</span> <span class="keyword">if</span> x != y  <span class="keyword">else</span> <span class="number">0</span>)<span class="keyword">for</span> x, y <span class="keyword">in</span> zip(a, b)) == <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">solution</span><span class="params">(begin, target, words)</span>:</span></span><br><span class="line">    <span class="comment"># target이 words 안에 없을 시 변환할 수 없으므로 0을 리턴</span></span><br><span class="line">    <span class="keyword">if</span> target <span class="keyword">not</span> <span class="keyword">in</span> words:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    q, d = deque(), dict()</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># queue에 begin값과 0을 넣음</span></span><br><span class="line">    <span class="comment"># 아직 변환하기 전이므로 0이다.</span></span><br><span class="line">    q.append((begin, <span class="number">0</span>))</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 변환 가능한 단어의 쌍으로 딕셔너리 생성</span></span><br><span class="line">    d[begin] = set(filter(<span class="keyword">lambda</span> x: transistable(x, begin), words))</span><br><span class="line">    <span class="keyword">for</span> w <span class="keyword">in</span> words:</span><br><span class="line">        d[w] = set(filter(<span class="keyword">lambda</span> x: transistable(x, w), words))</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># bfs</span></span><br><span class="line">    <span class="keyword">while</span> q:</span><br><span class="line">        print(q)</span><br><span class="line">        word, answer = q.popleft()</span><br><span class="line">        <span class="keyword">for</span> w <span class="keyword">in</span> d[word]:</span><br><span class="line">            <span class="keyword">if</span> w == target:</span><br><span class="line">                <span class="keyword">return</span> answer + <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                q.append((w, answer+<span class="number">1</span>))</span><br></pre></td></tr></table></figure><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/43163">https://programmers.co.kr/learn/courses/30/lessons/43163</a></p>]]></content:encoded>
+      
+      <comments>https://daphne-dev.github.io/2020/08/19/algo-007/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[프로그래머스] Level 3 여행경로</title>
@@ -411,28 +433,6 @@
       <content:encoded><![CDATA[<p><img src="/image/sql_026.PNG" alt=""><br><img src="/image/sql_026-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> OUTS.ANIMAL_ID, OUTS.NAME</span><br><span class="line"><span class="keyword">FROM</span> ANIAML_INS INS</span><br><span class="line"><span class="keyword">RIGHT</span> <span class="keyword">JOIN</span> ANIMAL_OUTS OUTS <span class="keyword">ON</span> INS.ANIMAL_ID = OUTS.ANIMAL_ID</span><br><span class="line"><span class="keyword">WHERE</span> OUTS.DATETIME <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="literal">NULL</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> OUTS.DATETIME - INS.DATETIME <span class="keyword">DESC</span></span><br><span class="line"><span class="keyword">LIMIT</span> <span class="number">2</span></span><br></pre></td></tr></table></figure><p>입양을 간 날짜 OUTS.DATETIME에 처음 보호를 시작한 날짜 INS.DATETIME를 뺀 날짜가 보호 기간이 될 것이다.<br>ORDER BY 를 사용하여 가장 보호 기간이 오래된 동물을 찾는다.<br>LIMIT를 사용하여 그 중에서 최상위 2개까지만 조회한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59411">https://programmers.co.kr/learn/courses/30/lessons/59411</a></p>]]></content:encoded>
       
       <comments>https://daphne-dev.github.io/2020/08/08/algorithm-sql-026/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[프로그래머스] SQL Level 2 중성화 여부 파악하기 MySQL</title>
-      <link>https://daphne-dev.github.io/2020/08/08/algorithm-sql-025/</link>
-      <guid>https://daphne-dev.github.io/2020/08/08/algorithm-sql-025/</guid>
-      <pubDate>Sat, 08 Aug 2020 05:37:28 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/image/sql_025.PNG&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/image/sql_025-1.PNG&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;풀이&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight 
-        
-      
-      </description>
-      
-      
-      <content:encoded><![CDATA[<p><img src="/image/sql_025.PNG" alt=""><br><img src="/image/sql_025-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ANIMAL_ID, <span class="keyword">NAME</span>,</span><br><span class="line"><span class="keyword">CASE</span></span><br><span class="line"><span class="keyword">WHEN</span> SEX_UPON_INTAKE <span class="keyword">NOT</span> <span class="keyword">LIKE</span> <span class="string">"Intact%"</span></span><br><span class="line"><span class="keyword">THEN</span> <span class="string">"O"</span></span><br><span class="line"><span class="keyword">ELSE</span> <span class="string">"X"</span></span><br><span class="line"><span class="keyword">END</span> <span class="keyword">AS</span> <span class="string">"중성화"</span></span><br><span class="line"><span class="keyword">FROM</span> ANIAML_INS</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> ANIMAL_ID</span><br></pre></td></tr></table></figure><p>CASE ~ WHEN ~ THEN ~ ELSE ~ END를 사용하는 문제이다.<br>NOT LIKE를 사용하여 Intact가 포함된 단어이면 X, 아니면 O로 표시한다.</p><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/59409">https://programmers.co.kr/learn/courses/30/lessons/59409</a></p>]]></content:encoded>
-      
-      <comments>https://daphne-dev.github.io/2020/08/08/algorithm-sql-025/#disqus_thread</comments>
     </item>
     
   </channel>
