@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/08/14/baekjoon-001/</loc>
+        <lastmod>2020-08-25T04:50:20.367Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/08/25/baekjoon-007/</loc>
-        <lastmod>2020-08-25T03:44:59.094Z</lastmod>
+        <lastmod>2020-08-25T04:50:18.451Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/08/20/baekjoon-003/</loc>
+        <lastmod>2020-08-25T03:51:46.148Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,15 +33,7 @@
 
     <url>
         <loc>https://daphne-dev.github.io/2020/08/25/baekjoon-006/</loc>
-        <lastmod>2020-08-25T01:53:30.299Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/08/14/baekjoon-001/</loc>
-        <lastmod>2020-08-24T14:18:22.302Z</lastmod>
+        <lastmod>2020-08-25T03:48:15.367Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -33,7 +41,7 @@
 
     <url>
         <loc>https://daphne-dev.github.io/2020/08/15/baekjoon-002/</loc>
-        <lastmod>2020-08-24T14:17:39.814Z</lastmod>
+        <lastmod>2020-08-25T03:46:49.603Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -138,14 +146,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/08/22/baekjoon-004/</loc>
         <lastmod>2020-08-22T04:01:02.370Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/08/20/baekjoon-003/</loc>
-        <lastmod>2020-08-20T16:41:10.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

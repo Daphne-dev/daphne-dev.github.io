@@ -11412,6 +11412,9 @@ figure.highlight .section {
     padding: 1.5rem 1rem;
   }
 }
+.content code {
+  color: #363636;
+}
 body {
   counter-reset: card;
 }
