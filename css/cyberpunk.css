@@ -10802,7 +10802,6 @@ article.article .content code {
   padding: 0;
   background: transparent;
   overflow-wrap: break-word;
-  color: #363636;
 }
 article.article .content blockquote.pullquote {
   float: right;
@@ -11412,6 +11411,12 @@ figure.highlight .section {
   .section {
     padding: 1.5rem 1rem;
   }
+}
+.content code {
+  color: #363636;
+}
+.content blockquote {
+  border-left: 5px solid #20c997;
 }
 body {
   counter-reset: card;
