@@ -10799,7 +10799,6 @@ article.article .content pre {
 }
 article.article .content code {
   padding: 0;
-  background: transparent;
   overflow-wrap: break-word;
 }
 article.article .content blockquote.pullquote {
@@ -11412,8 +11411,9 @@ figure.highlight .section {
   }
 }
 .content code {
-  color: #363636;
+  color: #318ccc;
+  font-size: 0.9em;
 }
 .content blockquote {
-  border-left: 5px solid #20c997;
+  border-left: 5px solid #87cefa;
 }
