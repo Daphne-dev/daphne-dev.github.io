@@ -11414,6 +11414,7 @@ figure.highlight .section {
 .content code {
   color: #318ccc;
   font-size: 0.9em;
+  font-weight: bold;
 }
 .content blockquote {
   border-left: 5px solid #87cefa;
