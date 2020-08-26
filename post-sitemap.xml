@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/08/26/baekjoon-008/</loc>
+        <lastmod>2020-08-26T13:21:50.223Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/08/25/baekjoon-007/</loc>
+        <lastmod>2020-08-26T13:20:33.029Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/08/26/algo-009/</loc>
         <lastmod>2020-08-26T11:28:45.011Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,14 +34,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/08/14/baekjoon-001/</loc>
         <lastmod>2020-08-25T04:50:20.367Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/08/25/baekjoon-007/</loc>
-        <lastmod>2020-08-25T04:50:18.451Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
