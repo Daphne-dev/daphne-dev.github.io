@@ -9,11 +9,11 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Thu, 27 Aug 2020 14:30:18 GMT</pubDate>
+    <pubDate>Thu, 27 Aug 2020 14:33:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>algo-010</title>
+      <title>[프로그래머스] Level 3 N으로 표현</title>
       <link>https://daphne-dev.github.io/2020/08/27/algo-010/</link>
       <guid>https://daphne-dev.github.io/2020/08/27/algo-010/</guid>
       <pubDate>Thu, 27 Aug 2020 14:26:13 GMT</pubDate>
