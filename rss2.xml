@@ -9,8 +9,30 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Tue, 08 Sep 2020 11:45:36 GMT</pubDate>
+    <pubDate>Wed, 09 Sep 2020 12:43:56 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[프로그래머스] Level 2 문자열 압축</title>
+      <link>https://daphne-dev.github.io/2020/09/09/algo-016/</link>
+      <guid>https://daphne-dev.github.io/2020/09/09/algo-016/</guid>
+      <pubDate>Wed, 09 Sep 2020 12:39:50 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/image/algo_016.PNG&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/image/algo_016-1.PNG&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;풀이&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highligh
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<p><img src="/image/algo_016.PNG" alt=""><br><img src="/image/algo_016-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">solution</span><span class="params">(s)</span>:</span></span><br><span class="line">    answer = len(s)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, len(s)//<span class="number">2</span>+<span class="number">1</span>):</span><br><span class="line">        word = <span class="string">''</span></span><br><span class="line">        prev = s[<span class="number">0</span>:i]</span><br><span class="line">        cnt = <span class="number">1</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(i, len(s), i):</span><br><span class="line">            <span class="keyword">if</span> prev == s[j:j+i]:</span><br><span class="line">                cnt += <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                word += str(cnt) + prev <span class="keyword">if</span> cnt &gt;= <span class="number">2</span> <span class="keyword">else</span> prev</span><br><span class="line">                prev = s[j:j+i]</span><br><span class="line">                cnt = <span class="number">1</span></span><br><span class="line">        word += str(cnt) + prev <span class="keyword">if</span> cnt &gt;= <span class="number">2</span> <span class="keyword">else</span> prev</span><br><span class="line">        answer = min(answer, len(word))</span><br><span class="line">    <span class="keyword">return</span> answer</span><br></pre></td></tr></table></figure><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/60057">https://programmers.co.kr/learn/courses/30/lessons/60057</a></p>]]></content:encoded>
+      
+      <comments>https://daphne-dev.github.io/2020/09/09/algo-016/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[백준] 14502 연구소</title>
@@ -414,26 +436,6 @@
       <content:encoded><![CDATA[<p><img src="/image/algo_012.PNG" alt=""><br><img src="/image/algo_012-1.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">solution</span><span class="params">(bridge_length, weight, truck_weights)</span>:</span></span><br><span class="line">    answer = <span class="number">0</span></span><br><span class="line">    bridge = [<span class="number">0</span>] * bridge_length</span><br><span class="line"></span><br><span class="line">    timer = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> len(truck_weights) &gt; <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">if</span> sum(bridge[<span class="number">1</span>:]) + truck_weights[<span class="number">0</span>] &lt;= weight:</span><br><span class="line">            bridge.append(truck_weights.pop(<span class="number">0</span>))</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">while</span> bridge[<span class="number">1</span>] == <span class="number">0</span>:</span><br><span class="line">                bridge.pop(<span class="number">1</span>)</span><br><span class="line">                bridge.append(<span class="number">0</span>)</span><br><span class="line">                timer += <span class="number">1</span></span><br><span class="line">            bridge.append(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">        timer += <span class="number">1</span></span><br><span class="line">        bridge.pop(<span class="number">0</span>)</span><br><span class="line">        </span><br><span class="line">    timer += len(bridge)            </span><br><span class="line">    <span class="keyword">return</span> timer</span><br></pre></td></tr></table></figure><p>출처 : 프로그래머스 코딩 테스트 연습<br><a href="https://programmers.co.kr/learn/courses/30/lessons/42583">https://programmers.co.kr/learn/courses/30/lessons/42583</a></p>]]></content:encoded>
       
       <comments>https://daphne-dev.github.io/2020/08/31/algo-012/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[비타알고] 문단속(★2)</title>
-      <link>https://daphne-dev.github.io/2020/08/30/bitaalgo-014/</link>
-      <guid>https://daphne-dev.github.io/2020/08/30/bitaalgo-014/</guid>
-      <pubDate>Sun, 30 Aug 2020 14:21:42 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;*이 글은 구름edu의 위클리 비타알고 시즌2 코딩테스트 대비 입문편을 기반으로 쓰여진 글입니다.&lt;br&gt;출처 : &lt;a href=&quot;https://edu.goorm.io/learn/lecture/15551/%EC%9C%84%ED%81%B4%EB%A6
-        
-      
-      </description>
-      
-      
-      <content:encoded><![CDATA[<p>*이 글은 구름edu의 위클리 비타알고 시즌2 코딩테스트 대비 입문편을 기반으로 쓰여진 글입니다.<br>출처 : <a href="https://edu.goorm.io/learn/lecture/15551/%EC%9C%84%ED%81%B4%EB%A6%AC-%EB%B9%84%ED%83%80%EC%95%8C%EA%B3%A0-%EC%8B%9C%EC%A6%8C2-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8C%80%EB%B9%84-%EC%9E%85%EB%AC%B8%ED%8E%B8">위클리 비타알고 시즌2 코딩테스트 대비 입문편</a></p><h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><p><img src="/image/bita_014.PNG" alt=""><br><img src="/image/bita_014-1.PNG" alt=""></p><h3 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">n = int(input())</span><br><span class="line">go = list(map(int, input().split()))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 문을 열고 들어갔으면 닫고 나와야 한다.</span></span><br><span class="line"><span class="comment"># 즉, 가장 나중에 들어온 데이터가 가장 먼저 처리되어야 하는 것을 알 수 있다.</span></span><br><span class="line"><span class="comment"># 이를 생각해 스택 구조를 이용해 풀 수 있다.</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">s</span><span class="params">(go)</span>:</span></span><br><span class="line">    stack = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> go:</span><br><span class="line">        <span class="keyword">if</span> i &gt; <span class="number">0</span>:</span><br><span class="line">            stack.append(i)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">if</span> len(stack) &gt; <span class="number">0</span> <span class="keyword">and</span> stack[<span class="number">-1</span>] == abs(i):</span><br><span class="line">                stack.pop()</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="string">"no"</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> len(stack) == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"yes"</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"no"</span></span><br><span class="line"></span><br><span class="line">print(s(go))</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      <comments>https://daphne-dev.github.io/2020/08/30/bitaalgo-014/#disqus_thread</comments>
     </item>
     
   </channel>
