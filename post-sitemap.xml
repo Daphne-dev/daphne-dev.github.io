@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/08/04/algorithm-sql-018/</loc>
+        <lastmod>2020-09-11T14:41:33.953Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/09/11/algo-017/</loc>
         <lastmod>2020-09-11T14:35:01.975Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -746,14 +754,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/08/04/algorithm-sql-017/</loc>
         <lastmod>2020-08-15T02:15:32.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/08/04/algorithm-sql-018/</loc>
-        <lastmod>2020-08-15T02:15:29.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
