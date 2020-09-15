@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/09/15/css-layout-float/</loc>
+        <lastmod>2020-09-15T01:34:53.508Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/09/15/css-layout-inline/</loc>
         <lastmod>2020-09-15T00:38:36.418Z</lastmod>
         <changefreq>weekly</changefreq>
