@@ -42,11 +42,7 @@
 <p>아래와 같이 직접 확인해볼 수 있다.<br><br></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">print(sys.path)</span><br><span class="line">print(sys.modules)</span><br></pre></td></tr></table></figure>
 <br>
-<br>
 
-
-
-<br>
 
 <h3 id="sys-modules-vs-sys-path"><a href="#sys-modules-vs-sys-path" class="headerlink" title="sys.modules vs sys.path"></a>sys.modules vs sys.path</h3><p>sys.modules는 dictionary 자료형으로 module/package 및 각각의 경로를 저장하고 있고<br>sys.path는 list 자료형으로 module/package가 설치된 dictionary를 담고 있다.</p>
 <h3 id="sys를-불러올-수-있는-이유"><a href="#sys를-불러올-수-있는-이유" class="headerlink" title="sys를 불러올 수 있는 이유"></a><code>sys</code>를 불러올 수 있는 이유</h3><p><code>sys.modules</code>나 <code>sys.path</code>는 sys 모듈로부터 오는 것을 알 수 있다.<br>그렇다면 sys 모듈은 어떻게 찾아서 불러올 수 있을까?</p>
@@ -68,8 +64,6 @@
 <p>이와 같이 import 하는 위치를 기준으로 경로를 정의하는 것을 <code>Relative path</code>라고 한다.<br><br></p>
 <p>그렇다면 직접 개발한 <code>local package</code>를 import 할 때를 알아보자.</p>
 <p>일반적으로 <code>Absolute path</code>를 사용한다.<br>다만 <code>Absolute path</code>를 사용하면 한 가지 단점이 있는데 경로가 너무 길어진다는 점이다.<br>이를 보완하기위해 적절하게 <code>Relative path</code>를 사용해준다.</p>
-<br>
-<br>
 <br>
 
 
@@ -95,7 +89,6 @@
 <blockquote>
 <p><code>main</code> 모듈에서는 <code>calculator package</code> 밖에 있기 때문에 상대 경로를 사용할 수 없지만<br><code>add_and_multiply.py</code>파일은 <code>calculator package</code>내에 있기 때문에 절대 경로와 상대 경로 모두 사용할 수 있다.</p>
 </blockquote>
-<br>
 <br>
 
 <h3 id="package에서의-init-py의-역할"><a href="#package에서의-init-py의-역할" class="headerlink" title="package에서의 init.py의 역할"></a>package에서의 <strong>init</strong>.py의 역할</h3><blockquote>
