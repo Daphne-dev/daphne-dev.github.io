@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/09/17/python-module-packages/</loc>
+        <lastmod>2020-09-19T01:37:24.190Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/09/18/python-thread/</loc>
         <lastmod>2020-09-18T06:43:07.269Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -34,14 +42,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/09/17/coding-test-001/</loc>
         <lastmod>2020-09-17T11:25:33.092Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/09/17/python-module-packages/</loc>
-        <lastmod>2020-09-17T07:36:59.593Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
