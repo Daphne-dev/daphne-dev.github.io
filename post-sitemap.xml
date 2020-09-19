@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/09/19/python-multiproccessing/</loc>
+        <lastmod>2020-09-19T11:42:12.609Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/09/18/python-thread/</loc>
-        <lastmod>2020-09-19T04:38:14.831Z</lastmod>
+        <lastmod>2020-09-19T06:33:41.016Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
