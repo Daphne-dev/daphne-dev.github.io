@@ -8,6 +8,46 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/09/21/http/</loc>
+        <lastmod>2020-09-21T11:55:34.161Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/09/17/python-module-packages/</loc>
+        <lastmod>2020-09-20T07:16:28.913Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/09/18/python-thread/</loc>
+        <lastmod>2020-09-20T07:16:16.750Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/09/18/python-generator/</loc>
+        <lastmod>2020-09-20T07:16:10.808Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/09/15/python-function/</loc>
+        <lastmod>2020-09-20T07:16:03.719Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/09/20/python-coroutine/</loc>
         <lastmod>2020-09-20T07:13:53.107Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -24,30 +64,6 @@
     </url>
 
     <url>
-        <loc>https://daphne-dev.github.io/2020/09/18/python-thread/</loc>
-        <lastmod>2020-09-19T06:33:41.016Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/09/17/python-module-packages/</loc>
-        <lastmod>2020-09-19T01:37:24.190Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/09/18/python-generator/</loc>
-        <lastmod>2020-09-18T02:35:30.257Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://daphne-dev.github.io/2020/09/17/coding-test-002/</loc>
         <lastmod>2020-09-17T12:26:30.861Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -58,14 +74,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/09/17/coding-test-001/</loc>
         <lastmod>2020-09-17T11:25:33.092Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/09/15/python-function/</loc>
-        <lastmod>2020-09-16T07:47:24.567Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
