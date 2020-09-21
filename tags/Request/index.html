@@ -34,11 +34,13 @@
 
 <h3 id="Request-Response"><a href="#Request-Response" class="headerlink" title="Request/Response"></a>Request/Response</h3><p>HTTP에서의 Request와 Response 메시지의 구조는 크게 세 부분으로 구성되어 있다.</p>
 <h4 id="1-Request-메세지-구조"><a href="#1-Request-메세지-구조" class="headerlink" title="1. Request 메세지 구조"></a>1. Request 메세지 구조</h4><ol>
-<li>Start Line : 요청의 첫 번째 줄에 해당한다.<ol>
+<li>Start Line : 요청의 첫 번째 줄에 해당한다.<blockquote>
+<ol>
 <li><strong>HTTP Method</strong> : 해당 요청이 의도한 액션을 정의하는 부분, 주로 <code>GET</code>, <code>POST</code>, <code>DELETE</code>가 많이 쓰임</li>
 <li><strong>Request target</strong> : 해당 requset가 전송되는 <code>목표 url</code></li>
 <li><strong>HTTP Version</strong> : HTTP 버전, 주로 1.1 버전이 널리 쓰임</li>
 </ol>
+</blockquote>
 </li>
 </ol>
 <p><code>GET /login HTTP/1.1</code><br>해석 : GET 메소드로 login이라는 요청 타겟에 HTTP 1.1 버전으로 요청을 보낸다는 의미</p>
@@ -57,11 +59,13 @@
 </ol>
 <p>ex) 로그인 시에 서버에 보낼 요청의 내용<br>Body : {<br>  “user_email”: “<a href="mailto:daphne01215@gmail.com">daphne01215@gmail.com</a>“<br>  “user_password”:”1234”<br>}</p>
 <h4 id="2-Response-메세지-구조"><a href="#2-Response-메세지-구조" class="headerlink" title="2. Response 메세지 구조"></a>2. Response 메세지 구조</h4><ol>
-<li>Start Line : 응답의 상태 줄. 응답은 요청에 대한 <strong><code>처리상태</code></strong>를 클라이언트에게 알려주면서 내용을 시작한다.<ol>
+<li>Start Line : 응답의 상태 줄. 응답은 요청에 대한 <strong><code>처리상태</code></strong>를 클라이언트에게 알려주면서 내용을 시작한다.<blockquote>
+<ol>
 <li><strong>HTTP Version</strong> : 요청의 <code>HTTP버전</code>과 동일</li>
 <li><strong>Status Code</strong> : 응답 메세지의 <code>상태 코드</code></li>
 <li><strong>Status Text</strong> : 응답 메세지의 상태를 간략하게 설명해주는 <code>텍스트</code></li>
 </ol>
+</blockquote>
 </li>
 </ol>
 <p><code>HTTP/1.1 404 Not Found</code><br>해석 : HTTP 1.1 버전으로 응답했고, 프론트엔드에서 보낸 요청에 대해서 해당하는 URL을 찾을 수 없기 때문에 404 상태 메시지를 보냄</p>
