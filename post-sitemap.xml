@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/09/17/coding-test-002/</loc>
+        <lastmod>2020-09-22T02:35:35.134Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/09/22/django/</loc>
-        <lastmod>2020-09-22T01:40:47.339Z</lastmod>
+        <lastmod>2020-09-22T01:43:29.580Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -66,14 +74,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/09/19/python-multiproccessing/</loc>
         <lastmod>2020-09-20T06:44:45.106Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/09/17/coding-test-002/</loc>
-        <lastmod>2020-09-17T12:26:30.861Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
