@@ -9,11 +9,11 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Thu, 24 Sep 2020 00:54:25 GMT</pubDate>
+    <pubDate>Thu, 24 Sep 2020 00:55:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>[백준] 14891 톱니바퀴</title>
+      <title>[백준] 14888 연산자 끼워넣기</title>
       <link>https://daphne-dev.github.io/2020/09/24/baekjoon-023/</link>
       <guid>https://daphne-dev.github.io/2020/09/24/baekjoon-023/</guid>
       <pubDate>Thu, 24 Sep 2020 00:51:40 GMT</pubDate>
