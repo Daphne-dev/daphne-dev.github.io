@@ -8,8 +8,8 @@
     </url>
 
     <url>
-        <loc>https://daphne-dev.github.io/2020/09/29/algo-024/</loc>
-        <lastmod>2020-09-29T00:50:36.191Z</lastmod>
+        <loc>https://daphne-dev.github.io/2020/09/29/algo-025/</loc>
+        <lastmod>2020-09-29T04:50:51.958Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +17,15 @@
 
     <url>
         <loc>https://daphne-dev.github.io/2020/09/28/algo-023/</loc>
-        <lastmod>2020-09-28T05:11:58.522Z</lastmod>
+        <lastmod>2020-09-29T04:48:30.275Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/09/29/algo-024/</loc>
+        <lastmod>2020-09-29T00:50:36.191Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
