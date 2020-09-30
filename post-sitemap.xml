@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/09/30/wsl-mysql-utf8-setting/</loc>
+        <lastmod>2020-09-30T00:06:54.568Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/09/25/database-001/</loc>
+        <lastmod>2020-09-29T23:36:05.848Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/09/29/algo-025/</loc>
         <lastmod>2020-09-29T04:50:51.958Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -26,14 +42,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/09/29/algo-024/</loc>
         <lastmod>2020-09-29T00:50:36.191Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/09/25/database-001/</loc>
-        <lastmod>2020-09-25T02:11:32.527Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
