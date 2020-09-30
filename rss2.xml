@@ -9,11 +9,11 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Wed, 30 Sep 2020 00:06:54 GMT</pubDate>
+    <pubDate>Wed, 30 Sep 2020 00:08:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>[MySQL] WSL에서의 MySQL 한글 깨짐 현상 해결하기(UTF8)</title>
+      <title>[MySQL] WSL에서의 MySQL 한글 깨짐 현상 해결하기</title>
       <link>https://daphne-dev.github.io/2020/09/30/wsl-mysql-utf8-setting/</link>
       <guid>https://daphne-dev.github.io/2020/09/30/wsl-mysql-utf8-setting/</guid>
       <pubDate>Tue, 29 Sep 2020 23:36:34 GMT</pubDate>
