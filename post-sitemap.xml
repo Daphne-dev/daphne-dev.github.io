@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/10/01/django-mysql/</loc>
+        <lastmod>2020-10-01T02:47:45.220Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/09/22/django/</loc>
+        <lastmod>2020-10-01T01:56:30.712Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/09/30/wsl-mysql-utf8-setting/</loc>
         <lastmod>2020-09-30T00:33:06.128Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -90,14 +106,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/09/17/coding-test-002/</loc>
         <lastmod>2020-09-22T02:35:35.134Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/09/22/django/</loc>
-        <lastmod>2020-09-22T01:43:29.580Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
