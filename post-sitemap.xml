@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/09/17/coding-test-001/</loc>
+        <lastmod>2020-10-05T04:43:37.962Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/09/17/coding-test-002/</loc>
+        <lastmod>2020-10-05T04:43:28.613Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/10/05/coding-test-003/</loc>
-        <lastmod>2020-10-05T04:41:11.736Z</lastmod>
+        <lastmod>2020-10-05T04:43:21.523Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -136,14 +152,6 @@
     </url>
 
     <url>
-        <loc>https://daphne-dev.github.io/2020/09/17/coding-test-002/</loc>
-        <lastmod>2020-09-22T02:35:35.134Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://daphne-dev.github.io/2020/09/21/http/</loc>
         <lastmod>2020-09-21T12:06:00.718Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -194,14 +202,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/09/19/python-multiproccessing/</loc>
         <lastmod>2020-09-20T06:44:45.106Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/09/17/coding-test-001/</loc>
-        <lastmod>2020-09-17T11:25:33.092Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
