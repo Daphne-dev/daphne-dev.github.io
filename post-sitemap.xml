@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/10/05/map-js/</loc>
+        <lastmod>2020-10-05T10:54:34.439Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/10/05/callbackfunction-js/</loc>
-        <lastmod>2020-10-05T10:35:32.639Z</lastmod>
+        <lastmod>2020-10-05T10:51:55.167Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
