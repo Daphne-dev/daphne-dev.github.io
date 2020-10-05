@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/10/05/callbackfunction-js/</loc>
+        <lastmod>2020-10-05T10:35:32.639Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/08/17/javascript-002/</loc>
+        <lastmod>2020-10-05T10:08:41.611Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/09/17/coding-test-001/</loc>
         <lastmod>2020-10-05T04:45:14.381Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -690,14 +706,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/08/18/algo-005/</loc>
         <lastmod>2020-08-18T10:24:40.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/08/17/javascript-002/</loc>
-        <lastmod>2020-08-17T09:42:48.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
