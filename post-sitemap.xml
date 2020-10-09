@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/10/09/async-await-js/</loc>
+        <lastmod>2020-10-09T05:42:15.761Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/10/08/promise-js/</loc>
-        <lastmod>2020-10-09T04:09:35.752Z</lastmod>
+        <lastmod>2020-10-09T04:52:33.291Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
