@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/10/09/async-await-js/</loc>
+        <lastmod>2020-10-14T00:32:11.245Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/10/13/algo-026/</loc>
         <lastmod>2020-10-13T11:49:00.979Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -42,14 +50,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/10/10/baekjoon-024/</loc>
         <lastmod>2020-10-10T04:44:05.170Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/10/09/async-await-js/</loc>
-        <lastmod>2020-10-09T05:42:15.761Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
