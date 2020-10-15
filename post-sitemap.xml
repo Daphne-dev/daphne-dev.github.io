@@ -8,6 +8,54 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/08/25/baekjoon-007/</loc>
+        <lastmod>2020-10-15T00:57:11.031Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/08/26/baekjoon-008/</loc>
+        <lastmod>2020-10-15T00:56:55.257Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/08/23/bitaalgo-011/</loc>
+        <lastmod>2020-10-15T00:56:34.285Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/08/24/bitaalgo-012/</loc>
+        <lastmod>2020-10-15T00:56:21.646Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/09/29/algo-024/</loc>
+        <lastmod>2020-10-15T00:56:02.783Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/10/15/baekjoon-029/</loc>
+        <lastmod>2020-10-15T00:55:43.400Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/10/14/baekjoon-028/</loc>
         <lastmod>2020-10-14T01:30:20.453Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -210,14 +258,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/09/28/algo-023/</loc>
         <lastmod>2020-09-29T04:48:30.275Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/09/29/algo-024/</loc>
-        <lastmod>2020-09-29T00:50:36.191Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -616,22 +656,6 @@
     </url>
 
     <url>
-        <loc>https://daphne-dev.github.io/2020/08/26/baekjoon-008/</loc>
-        <lastmod>2020-08-26T13:29:06.762Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/08/25/baekjoon-007/</loc>
-        <lastmod>2020-08-26T13:23:01.998Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://daphne-dev.github.io/2020/08/26/algo-009/</loc>
         <lastmod>2020-08-26T11:28:45.011Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -730,22 +754,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/08/12/bitaalgo-009/</loc>
         <lastmod>2020-08-24T14:11:47.018Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/08/24/bitaalgo-012/</loc>
-        <lastmod>2020-08-24T14:11:29.192Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/08/23/bitaalgo-011/</loc>
-        <lastmod>2020-08-23T09:02:08.227Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
