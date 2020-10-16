@@ -9,11 +9,11 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Fri, 16 Oct 2020 00:27:01 GMT</pubDate>
+    <pubDate>Fri, 16 Oct 2020 00:40:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>[백준] 9461 파도반 수열</title>
+      <title>[백준] 2798 블랙잭</title>
       <link>https://daphne-dev.github.io/2020/10/16/baekjoon-030/</link>
       <guid>https://daphne-dev.github.io/2020/10/16/baekjoon-030/</guid>
       <pubDate>Fri, 16 Oct 2020 00:22:49 GMT</pubDate>
