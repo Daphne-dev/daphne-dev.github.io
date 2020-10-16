@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/10/16/baekjoon-030/</loc>
+        <lastmod>2020-10-16T00:27:01.392Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/10/15/django-001/</loc>
         <lastmod>2020-10-15T10:01:52.125Z</lastmod>
         <changefreq>weekly</changefreq>
