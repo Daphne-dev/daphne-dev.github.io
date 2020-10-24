@@ -9,11 +9,33 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Sat, 24 Oct 2020 07:14:19 GMT</pubDate>
+    <pubDate>Sat, 24 Oct 2020 07:43:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>[DataBase] SQL 기본 쿼리문 사용하기</title>
+      <title>[DataBase] SQL 기본 쿼리문 사용하기 2</title>
+      <link>https://daphne-dev.github.io/2020/10/24/database-004/</link>
+      <guid>https://daphne-dev.github.io/2020/10/24/database-004/</guid>
+      <pubDate>Sat, 24 Oct 2020 07:27:24 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;현재 products 테이블에 들어있는 데이터는 아래와 같다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/database-004_001.PNG&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;WHERE-BETWEEN&quot;&gt;&lt;a href=&quot;#WHERE-BETWE
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<p>현재 products 테이블에 들어있는 데이터는 아래와 같다.</p><p><img src="/image/database-004_001.PNG" alt=""></p><h2 id="WHERE-BETWEEN"><a href="#WHERE-BETWEEN" class="headerlink" title="WHERE + BETWEEN"></a>WHERE + BETWEEN</h2><p><code>BETWEEN</code> 연산자는 특정 범위를 정해서 해당하는 값만 선택한다.</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">name</span>, price <span class="keyword">FROM</span> products <span class="keyword">WHERE</span> price <span class="keyword">BETWEEN</span> <span class="number">1000</span> <span class="keyword">and</span> <span class="number">4000</span>;</span><br></pre></td></tr></table></figure><p><img src="/image/database-004_002.PNG" alt=""></p><h2 id="COUNT"><a href="#COUNT" class="headerlink" title="COUNT"></a>COUNT</h2><p><code>COUNT</code> 연산자는 테이블에서 해당 컬럼의 row의 개수를 센다.</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">COUNT</span>(price) <span class="keyword">FROM</span> products <span class="keyword">WHERE</span> price <span class="keyword">BETWEEN</span> <span class="number">1000</span> <span class="keyword">and</span> <span class="number">4000</span>;</span><br></pre></td></tr></table></figure><p><img src="/image/database-004_003.PNG" alt=""></p><h2 id="SUM"><a href="#SUM" class="headerlink" title="SUM"></a>SUM</h2><p><code>SUM</code> 연산자는 테이블에서 해당 컬럼의 합을 계산한다.<br>여기서 <code>AS</code>는 <code>alias</code>를 의미하며 테이블의 이름을 <code>total</code>로 바꾸겠다는 의미로 쓰였다.</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SUM</span>(price) <span class="keyword">AS</span> total <span class="keyword">FROM</span> products <span class="keyword">WHERE</span> price;</span><br></pre></td></tr></table></figure><p><img src="/image/database-004_004.PNG" alt=""></p><h2 id="AVG"><a href="#AVG" class="headerlink" title="AVG"></a>AVG</h2><p><code>AVG</code> 연산자는 테이블에서 해당 컬럼의 평균을 계산한다.</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">AVG</span>(price) <span class="keyword">AS</span> total <span class="keyword">FROM</span> products <span class="keyword">WHERE</span> price;</span><br></pre></td></tr></table></figure><p><img src="/image/database-004_005.PNG" alt=""></p>]]></content:encoded>
+      
+      <comments>https://daphne-dev.github.io/2020/10/24/database-004/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>[DataBase] SQL 기본 쿼리문 사용하기 1</title>
       <link>https://daphne-dev.github.io/2020/10/24/database-003/</link>
       <guid>https://daphne-dev.github.io/2020/10/24/database-003/</guid>
       <pubDate>Sat, 24 Oct 2020 05:38:21 GMT</pubDate>
@@ -420,27 +442,6 @@
       <content:encoded><![CDATA[<h2 id="Filter-메소드란"><a href="#Filter-메소드란" class="headerlink" title="Filter 메소드란?"></a>Filter 메소드란?</h2><blockquote><p><code>filter()</code> 메소드는 배열의 각 요소에 대해 주어진 조건이 <code>True</code>인 경우의 요소만 모아 새로운 배열로 반환한다.</p></blockquote><p>만약 어떤 요소도 조건에 부합하지 않는다면 빈 배열을 반환한다.<br>아래 예시를 보자.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> number = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> result = number.filter(<span class="function"><span class="params">num</span> =&gt;</span> num % <span class="number">2</span> === <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(result)</span><br></pre></td></tr></table></figure><p>[출력결과]<br><img src="/image/filter-js_001.PNG" alt=""></p><p><code>number</code> 배열에서 해당 배열의 모든 요소에 대해 2로 나누었을때 나머지가 0인 경우, 즉 짝수인 경우만 반환하게한 예제이다.</p><p>참고 : <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/filter</a></p>]]></content:encoded>
       
       <comments>https://daphne-dev.github.io/2020/10/06/filter-js/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[JavaScript] reduce 메소드</title>
-      <link>https://daphne-dev.github.io/2020/10/05/reduce-js/</link>
-      <guid>https://daphne-dev.github.io/2020/10/05/reduce-js/</guid>
-      <pubDate>Mon, 05 Oct 2020 10:58:16 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;h2 id=&quot;Reduce-메소드란&quot;&gt;&lt;a href=&quot;#Reduce-메소드란&quot; class=&quot;headerlink&quot; title=&quot;Reduce 메소드란?&quot;&gt;&lt;/a&gt;Reduce 메소드란?&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;reduce()&lt;/cod
-        
-      
-      </description>
-      
-      
-      <content:encoded><![CDATA[<h2 id="Reduce-메소드란"><a href="#Reduce-메소드란" class="headerlink" title="Reduce 메소드란?"></a>Reduce 메소드란?</h2><blockquote><p><code>reduce()</code> 메소드는 배열의 각 요소에 대해 주어진 <code>함수</code>를 실행하고 <code>하나의 결과 값을 반환</code>한다.</p></blockquote><p><code>reduce()</code> 메소드의 문법은 다음과 같다.</p><blockquote><p>배열.reduce((누적값, 현재값, 인덱스, 요소) =&gt; { return 결과 }, 초깃값);</p></blockquote><p>초깃값을 미리 정할 수 있고 배열을 돌면서 누적값을 계속해서 활용할 수 있다.<br>아래 예시를 보자.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> number = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> sumNumber = number.reduce(<span class="function">(<span class="params">acc, cur, i</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`누적값: <span class="subst">$&#123;acc&#125;</span>, 현재값: <span class="subst">$&#123;cur&#125;</span>, 배열 인덱스: <span class="subst">$&#123;i&#125;</span>`</span>)</span><br><span class="line">    <span class="keyword">return</span> acc + cur</span><br><span class="line">&#125;, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(sumNumber)</span><br></pre></td></tr></table></figure><p>[출력결과]<br><img src="/image/reduce-js_001.PNG" alt=""></p><p><code>number</code> 배열을 이용해 해당 배열의 모든 요소를 더한 값을 구하는 예제이다.<br>배열을 처음부터 끝까지 순회하면서 <code>반환되는 누적값</code>을 계속해서 사용하는 것을 볼 수 있다.<br>이를 활용해서 단순한 합 계산뿐만이 아니라 다른 곳에도 유용하게 쓰일 수 있다.</p><p>다음 코드를 보자.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> evenNumber = number.reduce(<span class="function">(<span class="params">acc, cur</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (cur % <span class="number">2</span> === <span class="number">0</span>) &#123;</span><br><span class="line">        acc.push(cur)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> acc</span><br><span class="line">&#125;, [])</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(evenNumber)</span><br></pre></td></tr></table></figure><p>[출력결과]<br><img src="/image/reduce-js_002.PNG" alt=""></p><p><code>number</code> 배열에서 짝수만 골라서 배열로 만드는 예제이다.<br>초기값을 빈 배열로 주어서 현재 값이 짝수이면 빈 배열인 acc안에 넣어주고 다음에 활용할 수 있도록 acc 배열을 반환해준다.<br><code>filter()</code> 메소드와 거의 유사한 것을 알 수 있다. </p><p>참고 : <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce</a></p>]]></content:encoded>
-      
-      <comments>https://daphne-dev.github.io/2020/10/05/reduce-js/#disqus_thread</comments>
     </item>
     
   </channel>
