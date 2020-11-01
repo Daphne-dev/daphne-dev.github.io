@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/11/01/django-querystring/</loc>
+        <lastmod>2020-11-01T04:47:49.624Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/10/06/restful-api/</loc>
+        <lastmod>2020-11-01T04:14:32.786Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/10/26/django-orm-003/</loc>
         <lastmod>2020-10-27T13:47:43.322Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -218,14 +234,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/10/08/promise-js/</loc>
         <lastmod>2020-10-09T04:52:33.291Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/10/06/restful-api/</loc>
-        <lastmod>2020-10-06T08:03:21.204Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
