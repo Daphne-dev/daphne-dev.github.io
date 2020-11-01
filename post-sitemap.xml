@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/11/01/brokurly-review/</loc>
+        <lastmod>2020-11-01T12:43:06.938Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/11/01/django-querystring/</loc>
-        <lastmod>2020-11-01T04:47:49.624Z</lastmod>
+        <lastmod>2020-11-01T04:49:51.542Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
