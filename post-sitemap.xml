@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/11/15/baekjoon-035/</loc>
+        <lastmod>2020-11-15T14:34:52.229Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/11/15/prisma-002/</loc>
-        <lastmod>2020-11-15T14:01:46.774Z</lastmod>
+        <lastmod>2020-11-15T14:04:13.470Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +25,7 @@
 
     <url>
         <loc>https://daphne-dev.github.io/2020/11/11/prisma-001/</loc>
-        <lastmod>2020-11-15T09:02:07.425Z</lastmod>
+        <lastmod>2020-11-15T14:04:08.254Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
