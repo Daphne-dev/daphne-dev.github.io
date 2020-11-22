@@ -9,8 +9,29 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Wed, 18 Nov 2020 02:24:12 GMT</pubDate>
+    <pubDate>Sun, 22 Nov 2020 10:40:56 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[Node.js] Jest</title>
+      <link>https://daphne-dev.github.io/2020/11/22/nodejs-005/</link>
+      <guid>https://daphne-dev.github.io/2020/11/22/nodejs-005/</guid>
+      <pubDate>Sun, 22 Nov 2020 10:04:40 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h2 id=&quot;Jest란&quot;&gt;&lt;a href=&quot;#Jest란&quot; class=&quot;headerlink&quot; title=&quot;Jest란 ?&quot;&gt;&lt;/a&gt;Jest란 ?&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt; Facebook에서 만든 &lt;code&gt;Javascript 테스트 프레임 워
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<h2 id="Jest란"><a href="#Jest란" class="headerlink" title="Jest란 ?"></a>Jest란 ?</h2><blockquote><p> Facebook에서 만든 <code>Javascript 테스트 프레임 워크</code>이다. 간단한 설치만으로 테스트 코드를 작성할 수 있다.</p></blockquote><h2 id="Jest의-편리함"><a href="#Jest의-편리함" class="headerlink" title="Jest의 편리함"></a>Jest의 편리함</h2><blockquote><p>기존의 Javascript 테스트 라이브러리들은 <code>Test Runner</code>, <code>Test Mathcher</code>, <code>Test Mock</code>과 같이 여러가지 테스팅용 라이브러리들을 혼합해서 사용하는 불편함이 있었다. Jest에서는 이 모든 것을 한 번에 제공해 주기 때문에 사용하기 편리하다.</p></blockquote><h2 id="Jest-설치하기"><a href="#Jest-설치하기" class="headerlink" title="Jest 설치하기"></a>Jest 설치하기</h2><h3 id="Jest-설치"><a href="#Jest-설치" class="headerlink" title="Jest 설치"></a>Jest 설치</h3><p>테스트를 해볼 프로젝트를 생성하고 아래 명령어를 통해 jest를 설치한다.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm init -y</span><br><span class="line">npm i -D jest</span><br></pre></td></tr></table></figure><h3 id="package-json-파일-수정"><a href="#package-json-파일-수정" class="headerlink" title="package.json 파일 수정"></a>package.json 파일 수정</h3><p><code>package.json</code> 파일을 열고 <code>test</code>의 값을 <code>jest</code>로 수정한다.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">  <span class="string">"test"</span>: <span class="string">"jest"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="기본적인-테스트-코드-작성하기"><a href="#기본적인-테스트-코드-작성하기" class="headerlink" title="기본적인 테스트 코드 작성하기"></a>기본적인 테스트 코드 작성하기</h2><p>간단한 sum 함수를 테스트 해보자.</p><p>먼저 <code>sum.js</code> 파일을 만들어 아래와 같이 입력한다.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = sum;</span><br></pre></td></tr></table></figure><p>테스트를 하기위해 <code>sum.test.js</code> 파일을 만들어 아래와 같이 입력한다.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123; TestScheduler &#125; = <span class="built_in">require</span>(<span class="string">'jest'</span>);</span><br><span class="line"><span class="keyword">const</span> sum = <span class="built_in">require</span>(<span class="string">'./sum'</span>);</span><br><span class="line"></span><br><span class="line">test(<span class="string">'sum function test : adds 1 + 2 to equal 3'</span>, () =&gt; &#123;</span><br><span class="line">  expect(sum(<span class="number">1</span>, <span class="number">2</span>)).toEqual(<span class="number">3</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><p>다음 명령어를 입력하면 테스트가 실행된다.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="built_in">test</span></span><br></pre></td></tr></table></figure><p>성공적으로 테스트가 통과되었음을 알 수 있을 것이다.</p><p><img src="/image/nodejs_005.PNG" alt=""></p><p>참고 : <a href="https://jestjs.io/docs/en/getting-started.html">Jest 공식 문서</a></p>]]></content:encoded>
+      
+      <comments>https://daphne-dev.github.io/2020/11/22/nodejs-005/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[DataBase] SQL 점 이력, 선분 이력</title>
@@ -419,27 +440,6 @@
       <content:encoded><![CDATA[<blockquote><p><code>django</code>의 구조를 크게 보면 3개로 나뉘어 진다.<br><code>Model</code>, <code>View</code>, <code>Template</code>이다.</p></blockquote><p>참고 : <a href="https://daphne-dev.github.io/2020/09/22/django/">django 란?</a></p><p><code>django</code>의 구조를 도식화하면 아래와 같이 된다.</p><p><img src="/image/django_001.PNG" alt=""></p><ul><li><code>URLs</code> : 요청받은 URL을 기준으로 HTTP 요청을 적절한 <code>View</code>로 보내주기 위해 사용된다.</li><li><code>View</code> : HTTP 요청을 수신하고 HTTP 응답을 반환하는 요청 처리 함수이다. <code>View</code>는 <code>Model</code>을 통해 필요한 데이터에 접근하여 요청한 사항을 처리하고 <code>Template</code>에 응답의 서식을 맡긴다.</li><li><code>Model</code> : 데이터 구조를 정의하고 데이터베이스의 기록을 관리하고 쿼리하는 방법을 제공하는 파이썬 객체이다.</li><li><code>ORM</code> : 객체(Object)와 관계형 데이터베이스(Relational Database)의 데이터를 매핑(Mapping)해주는 것을 의미, django에서는 ORM을 통해 sql 쿼리문을 쓰지 않고도 데이터베이스의 데이터를 다룰 수 있다.</li><li><code>Template</code> : 파일의 구조나 레이아웃을 정의하고 <code>View</code>에서 보내진 데이터를 바탕으로 렌더링을 해주는 역할을 한다.</li></ul><p>django는 일련의 단계를 수행해서 웹 브라우저에 응답을 반환한다.</p><ol><li><code>HTTP request</code>를 보냄</li><li><code>URLs</code>에서 요청받은 URL패턴에 맞게 알맞은 <code>View</code>로 보냄</li><li><code>View</code>는 받은 요청에 따라 <code>Model</code>에서 <code>ORM</code>을 이용해 DB 데이터에 접근하여 요청을 처리</li><li><code>HTTP response</code>를 반환</li><li><code>Template</code>에서 <code>View</code>에서 받은 데이터를 기반으로 렌더링</li></ol><p>출처 : <a href="https://developer.mozilla.org/ko/docs/Learn/Server-side/Django/Introduction">https://developer.mozilla.org/ko/docs/Learn/Server-side/Django/Introduction</a></p>]]></content:encoded>
       
       <comments>https://daphne-dev.github.io/2020/10/15/django-001/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>ORM 개념</title>
-      <link>https://daphne-dev.github.io/2020/10/15/django-orm-001/</link>
-      <guid>https://daphne-dev.github.io/2020/10/15/django-orm-001/</guid>
-      <pubDate>Thu, 15 Oct 2020 06:09:14 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;h2 id=&quot;ORM이란&quot;&gt;&lt;a href=&quot;#ORM이란&quot; class=&quot;headerlink&quot; title=&quot;ORM이란?&quot;&gt;&lt;/a&gt;ORM이란?&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;ORM&lt;/code&gt;이란 객체(Object)와 관계형 데이터베이스(R
-        
-      
-      </description>
-      
-      
-      <content:encoded><![CDATA[<h2 id="ORM이란"><a href="#ORM이란" class="headerlink" title="ORM이란?"></a>ORM이란?</h2><blockquote><p><code>ORM</code>이란 객체(Object)와 관계형 데이터베이스(Relational Database)의 데이터를 매핑(Mapping)해주는 것을 의미<br>django에서는 ORM을 통해 sql 쿼리문을 쓰지 않고도 <code>데이터베이스의 데이터를 다룰 수 있다.</code></p></blockquote><br> <h2 id="ORM의-장점"><a href="#ORM의-장점" class="headerlink" title="ORM의 장점"></a>ORM의 장점</h2><ul><li>불필요하게 SQL문을 길게 적지 않아도 되어 빠르게 개발이 가능하다.</li><li>자동으로 처리해주기 때문에 개발자가 신경 쓸 부분이 줄어든다.  </li><li>유지보수가 편하고 코드의 재사용이 가능해진다.</li></ul><br><h2 id="ORM의-단점"><a href="#ORM의-단점" class="headerlink" title="ORM의 단점"></a>ORM의 단점</h2><ul><li>SQL을 쓰면 어떤 곳이든 통용되지만 ORM은 해당 프로그래밍 언어마다 ORM 라이브러리를 따로 배워야한다.</li><li>규모가 크거나 복잡한 프로젝트의 경우 SQL로 작성하는 것이 좋을 수도 있다.</li></ul>]]></content:encoded>
-      
-      <comments>https://daphne-dev.github.io/2020/10/15/django-orm-001/#disqus_thread</comments>
     </item>
     
   </channel>
