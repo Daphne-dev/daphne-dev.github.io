@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/11/22/nodejs-006/</loc>
+        <lastmod>2020-11-22T11:59:18.891Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/11/22/nodejs-005/</loc>
-        <lastmod>2020-11-22T10:40:56.107Z</lastmod>
+        <lastmod>2020-11-22T11:49:18.923Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
