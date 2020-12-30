@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2020/12/29/code-roasters-review/</loc>
+        <lastmod>2020-12-29T04:10:44.971Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2020/11/29/flask-001/</loc>
-        <lastmod>2020-11-29T14:06:18.280Z</lastmod>
+        <lastmod>2020-11-29T14:09:21.286Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
