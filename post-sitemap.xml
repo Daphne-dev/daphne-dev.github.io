@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2021/01/02/baekjooon-036/</loc>
+        <lastmod>2021-01-02T06:35:34.106Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://daphne-dev.github.io/2020/10/06/rest-api/</loc>
+        <lastmod>2021-01-01T15:15:53.454Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2021/01/01/algo-030/</loc>
         <lastmod>2021-01-01T12:54:17.505Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -170,14 +186,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/11/01/django-querystring/</loc>
         <lastmod>2020-11-01T04:49:51.542Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2020/10/06/restful-api/</loc>
-        <lastmod>2020-11-01T04:14:32.786Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
