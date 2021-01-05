@@ -10,7 +10,7 @@
 <h2 id="트랜잭션의-특성"><a href="#트랜잭션의-특성" class="headerlink" title="트랜잭션의 특성"></a>트랜잭션의 특성</h2><p>트랜잭션은 ACID라는 4가지 특성을 만족해야한다.</p>
 <h3 id="원자성-Atomicity"><a href="#원자성-Atomicity" class="headerlink" title="원자성(Atomicity)"></a>원자성(Atomicity)</h3><p>트랜잭션 중간에 어떠한 문제가 발생했을 때 트랜잭션에 해당하는 어떠한 작업 내용도 수행되어서는 안되며 아무런 문제가 발생되지 않았을 경우에만 모든 작업이 수행되어야 한다.</p>
 <h3 id="일관성-Consistency"><a href="#일관성-Consistency" class="headerlink" title="일관성(Consistency)"></a>일관성(Consistency)</h3><p>트랜잭션이 완료된 다음의 상태에서도 트랜잭션이 일어나기 전의 상황과 동일하게 데이터의 일관성을 보장해야 한다.</p>
-<h2 id="고립성-Isolation"><a href="#고립성-Isolation" class="headerlink" title="고립성(Isolation)"></a>고립성(Isolation)</h2><p>각각의 트랜잭션은 서로 간섭업이 독립적으로 수행되어야 한다.</p>
+<h3 id="고립성-Isolation"><a href="#고립성-Isolation" class="headerlink" title="고립성(Isolation)"></a>고립성(Isolation)</h3><p>각각의 트랜잭션은 서로 간섭업이 독립적으로 수행되어야 한다.</p>
 <h3 id="지속성-Durability"><a href="#지속성-Durability" class="headerlink" title="지속성(Durability)"></a>지속성(Durability)</h3><p>트랜잭션이 정상적으로 종료된 다음에는 영구적으로 데이터베이스에 작업의 결과가 저장되어야 한다.</p>
 <h2 id="트랜잭션을-사용할-때-주의할-점"><a href="#트랜잭션을-사용할-때-주의할-점" class="headerlink" title="트랜잭션을 사용할 때 주의할 점"></a>트랜잭션을 사용할 때 주의할 점</h2><p>트랜잭션은 꼭 필요한 최소의 코드에만 적용하는 것이 좋다. 일반적으로 데이터베이스에서 커넥션의 개수는 제한적이기 때문인데, 각각의 프로그램이 커넥션을 소유하는 시간이 길어진다면 사용 가능한 여유 커넥션의 수가 줄어들게 되어 커넥션을 가져가기 위해 기다리는 상황이 발생할 수 있기 때문이다.</p>
 <h2 id="교착상태"><a href="#교착상태" class="headerlink" title="교착상태"></a>교착상태</h2><p>복수의 트랜잭션을 사용할 때 교착상태가 일어날 수 있다. 교착상태란 두 개 이상의 트랜잭션이 특정 자원의 잠금(Lock)을 획득한 채 다른 트랜잭션이 소유하고 있는 잠금을 요구하면 아무리 기다려도 상황이 바뀌지 않는 상태가 되는데, 이를 <code>교착상태</code>라고 한다. </p>
