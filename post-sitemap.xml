@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://daphne-dev.github.io/2021/01/06/algo-031/</loc>
+        <lastmod>2021-01-06T14:34:50.953Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2021/01/04/database-transaction/</loc>
         <lastmod>2021-01-05T14:57:32.962Z</lastmod>
         <changefreq>weekly</changefreq>
