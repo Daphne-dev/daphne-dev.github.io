@@ -9,8 +9,29 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Fri, 08 Jan 2021 14:28:53 GMT</pubDate>
+    <pubDate>Sat, 09 Jan 2021 14:51:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[LeetCode] Two Sum </title>
+      <link>https://daphne-dev.github.io/2021/01/09/leetcode-003/</link>
+      <guid>https://daphne-dev.github.io/2021/01/09/leetcode-003/</guid>
+      <pubDate>Sat, 09 Jan 2021 14:44:43 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/image/leetcode_003.PNG&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<p><img src="/image/leetcode_003.PNG" alt=""></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span>(<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> dic = &#123;&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (target - nums[i] <span class="keyword">in</span> dic) &#123;</span><br><span class="line">            <span class="keyword">return</span> [dic[target - nums[i]], i]</span><br><span class="line">        &#125;</span><br><span class="line">        dic[nums[i]] = i</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>출처 : leetcode 알고리즘 연습<br><a href="https://leetcode.com/problems/longest-palindromic-substring/">https://leetcode.com/problems/longest-palindromic-substring/</a></p>]]></content:encoded>
+      
+      <comments>https://daphne-dev.github.io/2021/01/09/leetcode-003/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[LeetCode] Add Two Numbers</title>
@@ -412,28 +433,6 @@
       <content:encoded><![CDATA[<p><img src="/image/baekjoon_034.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n = sorted(list(str(input())), reverse=<span class="literal">True</span>)</span><br><span class="line">print((int(<span class="string">''</span>.join(n))))</span><br></pre></td></tr></table></figure><p>출처 : 백준 ONLINE JUDGE<br><a href="https://www.acmicpc.net/problem/1427">https://www.acmicpc.net/problem/1427</a></p>]]></content:encoded>
       
       <comments>https://daphne-dev.github.io/2020/11/08/baekjoon-034/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[백준] 10989 통계학</title>
-      <link>https://daphne-dev.github.io/2020/11/05/baekjoon-033/</link>
-      <guid>https://daphne-dev.github.io/2020/11/05/baekjoon-033/</guid>
-      <pubDate>Thu, 05 Nov 2020 01:33:40 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/image/baekjoon_033.PNG&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;풀이&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;
-        
-      
-      </description>
-      
-      
-      <content:encoded><![CDATA[<p><img src="/image/baekjoon_033.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> Counter</span><br><span class="line"></span><br><span class="line">input = sys.stdin.readline</span><br><span class="line"></span><br><span class="line">n = int(input())</span><br><span class="line"></span><br><span class="line">array = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">    array.append(int(input()))</span><br><span class="line"></span><br><span class="line">array.sort()</span><br><span class="line"></span><br><span class="line">cnt = Counter(array)</span><br><span class="line"><span class="comment"># 최빈값 구하기</span></span><br><span class="line">cnt = cnt.most_common()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> len(cnt) != <span class="number">1</span>:</span><br><span class="line">  <span class="comment"># 최빈값에 해당하는 숫자가 2개면 두번째 값을 최빈값으로 지정</span></span><br><span class="line">  <span class="keyword">if</span> cnt[<span class="number">0</span>][<span class="number">1</span>] == cnt[<span class="number">1</span>][<span class="number">1</span>]:</span><br><span class="line">    cnt = cnt[<span class="number">1</span>][<span class="number">0</span>]</span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">    cnt = cnt[<span class="number">0</span>][<span class="number">0</span>]</span><br><span class="line"><span class="comment"># 주어진 숫자가 1개만 있을 경우 해당 값을 최빈값으로 지정</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">  cnt = cnt[<span class="number">0</span>][<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">print(round(sum(array) / n))</span><br><span class="line"><span class="comment"># 주어진 숫자의 개수가 홀수라면 중앙 값을 출력, 짝수라면 두개의 평균 값을 출력 </span></span><br><span class="line">print(array[n // <span class="number">2</span>] <span class="keyword">if</span> n %<span class="number">2</span> != <span class="number">0</span> <span class="keyword">else</span> round((array[n // <span class="number">2</span>] + array[n //<span class="number">2</span>+<span class="number">1</span>])/<span class="number">2</span>))</span><br><span class="line">print(cnt)</span><br><span class="line">print(array[<span class="number">-1</span>] - array[<span class="number">0</span>])</span><br></pre></td></tr></table></figure><p>출처 : 백준 ONLINE JUDGE<br><a href="https://www.acmicpc.net/problem/2108">https://www.acmicpc.net/problem/2108</a></p>]]></content:encoded>
-      
-      <comments>https://daphne-dev.github.io/2020/11/05/baekjoon-033/#disqus_thread</comments>
     </item>
     
   </channel>
