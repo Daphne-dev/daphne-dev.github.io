@@ -33,7 +33,7 @@
     </item>
     
     <item>
-      <title>[LeetCode] Two Sum </title>
+      <title>[LeetCode] Two Sum</title>
       <link>https://daphne-dev.github.io/2021/01/09/leetcode-003/</link>
       <guid>https://daphne-dev.github.io/2021/01/09/leetcode-003/</guid>
       <pubDate>Sat, 09 Jan 2021 14:44:43 GMT</pubDate>
@@ -42,13 +42,14 @@
         
         
           &lt;p&gt;&lt;img src=&quot;/image/leetcode_003.PNG&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;
+&lt;p&gt;&lt;strong&gt;풀이&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutt
         
       
       </description>
       
       
-      <content:encoded><![CDATA[<p><img src="/image/leetcode_003.PNG" alt=""></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span>(<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> dic = &#123;&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (target - nums[i] <span class="keyword">in</span> dic) &#123;</span><br><span class="line">            <span class="keyword">return</span> [dic[target - nums[i]], i]</span><br><span class="line">        &#125;</span><br><span class="line">        dic[nums[i]] = i</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>출처 : leetcode 알고리즘 연습<br><a href="https://leetcode.com/problems/longest-palindromic-substring/">https://leetcode.com/problems/longest-palindromic-substring/</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="/image/leetcode_003.PNG" alt=""></p><p><strong>풀이</strong></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span>(<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> dic = &#123;&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (target - nums[i] <span class="keyword">in</span> dic) &#123;</span><br><span class="line">            <span class="keyword">return</span> [dic[target - nums[i]], i]</span><br><span class="line">        &#125;</span><br><span class="line">        dic[nums[i]] = i</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>출처 : leetcode 알고리즘 연습<br><a href="https://leetcode.com/problems/longest-palindromic-substring/">https://leetcode.com/problems/longest-palindromic-substring/</a></p>]]></content:encoded>
       
       <comments>https://daphne-dev.github.io/2021/01/09/leetcode-003/#disqus_thread</comments>
     </item>
