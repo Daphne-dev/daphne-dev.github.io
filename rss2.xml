@@ -9,11 +9,11 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Daphne의 개발 블로그입니다</description>
-    <pubDate>Wed, 27 Jan 2021 04:34:01 GMT</pubDate>
+    <pubDate>Wed, 27 Jan 2021 04:40:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>[프로그래머스] Level 2 기능개발</title>
+      <title>[프로그래머스] Level 1 신규 아이디 추천</title>
       <link>https://daphne-dev.github.io/2021/01/27/algo-033/</link>
       <guid>https://daphne-dev.github.io/2021/01/27/algo-033/</guid>
       <pubDate>Wed, 27 Jan 2021 04:30:31 GMT</pubDate>
