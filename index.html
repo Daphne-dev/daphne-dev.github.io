@@ -34,11 +34,11 @@
 <p>Git flow가 대규모 프로젝트에서는 적합할지 모르지만 대다수의 프로젝트에서는 굳이 필요없는 절차까지 준수하도록 해서 생산성을 떨어뜨린다는 의견이 나오게 되었고 그렇게 탄생한 것이 <code>GitHub flow</code>와 <code>GitLab flow</code>다 </p>
 <br>
 
-<h2 id="GitHub-flow"><a href="#GitHub-flow" class="headerlink" title="GitHub flow"></a>GitHub flow</h2><p><img src="/image/github-flow-001.png" alt=""></p>
+<h2 id="GitHub-flow"><a href="#GitHub-flow" class="headerlink" title="GitHub flow"></a>GitHub flow</h2><p><img src="/image/github-flow_001.png" alt=""></p>
 <p><code>master 브랜치</code>는 항상 최신의 상태를 유지하며 stable하다. 이는 항상 배포가 가능하다는 의미이다.<br>GitHub flow에서는 <code>feature</code>나 <code>develop</code> 브랜치 같은 것이 존재하지 않는다. 만약 작업을 위해 브랜치를 따야한다면 작업하는게 무엇인지 명확히 알 수 있도록 브랜치 명을 작성한다.<br>CI가 필수적이며, 배포를 자동으로 진행할 수 있다.<br>GitHub flow에서는 <code>PullRequest 기능</code>을 권장한다. 이를 통해 코드 리뷰를 하기 위해서 이다.<br><code>Git flow</code>에 비해 간단한 구조로 되어있어서 비교적 신속하게 배포를 수행할 수 있다.</p>
 <br>
 
-<h2 id="GitLab-flow"><a href="#GitLab-flow" class="headerlink" title="GitLab flow"></a>GitLab flow</h2><p><img src="/image/gitlab-flow-001.png" alt=""></p>
+<h2 id="GitLab-flow"><a href="#GitLab-flow" class="headerlink" title="GitLab flow"></a>GitLab flow</h2><p><img src="/image/gitlab-flow_001.png" alt=""></p>
 <p><code>production 브랜치</code>는 <code>Git flow</code>에서의 <code>master 브랜치</code>와 같은 역할을 한다. GitLab flow에서의 master 브랜치는 production 브랜치로 병합한다.<br>이를 통해 production 브랜치에서 릴리즈된 코드가 항상 프로젝트의 최신 버전 상태를 유지해야할 필요가 없게 한다.</p>
 <p><code>Git flow</code>와 <code>GitHub flow</code>의 각각의 장점을 절충한 것 같은 느낌이 든다.</p>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2021-01-13T14:18:43.000Z" title="2021-01-13T14:18:43.000Z">2021-01-13</time><span class="level-item"><a class="link-muted" href="/categories/JavaScript/">JavaScript</a></span><span class="level-item">13분 읽기 (대략 1897 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/01/13/javascript-004/">[JavaScript] 클로저(Closure)</a></h1><div class="content"><h2 id="클로저-Closure-란"><a href="#클로저-Closure-란" class="headerlink" title="클로저(Closure)란 ?"></a>클로저(Closure)란 ?</h2><blockquote>
