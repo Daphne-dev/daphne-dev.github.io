@@ -4,7 +4,7 @@
         gtag('js', new Date());
     
         gtag('config', 'UA-173436998-1');</script><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><link rel="alternate" href="/rss2.xml" title="Daphne's blog" type="application/rss+xml">
-</head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_image.png" alt="Daphne&#039;s blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="https://github.com/Daphne-dev">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/Daphne-dev"><i class="fab fa-github"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">카테고리</a></li><li class="is-active"><a href="#" aria-current="page">Docker</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2021-03-23T12:32:32.000Z" title="2021-03-23T12:32:32.000Z">2021-03-23</time><span class="level-item"><a class="link-muted" href="/categories/Docker/">Docker</a></span><span class="level-item">4분 읽기 (대략 554 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/03/23/docker-002/">Docker 설치와 명령어</a></h1><div class="content"><div align=center>
+</head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_image.png" alt="Daphne&#039;s blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="https://github.com/Daphne-dev">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/Daphne-dev"><i class="fab fa-github"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">카테고리</a></li><li class="is-active"><a href="#" aria-current="page">Docker</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2021-03-23T12:32:32.000Z" title="2021-03-23T12:32:32.000Z">2021-03-23</time><span class="level-item"><a class="link-muted" href="/categories/Docker/">Docker</a></span><span class="level-item">4분 읽기 (대략 545 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/03/23/docker-002/">Docker 설치와 명령어</a></h1><div class="content"><div align=center>
 
 <p><img src="/image/docker.png" alt=""></p>
 </div>
@@ -29,27 +29,36 @@
 
 <p>제대로 설치되었다면 아래와 같이 탭을 누르면 사용할 수 있는 옵션들에 대해 설명이 표시되게 된다.</p>
 <p><img src="/image/docker-004.png" alt=""></p>
-<h2 id="Docker-명령어"><a href="#Docker-명령어" class="headerlink" title="Docker 명령어"></a>Docker 명령어</h2><h3 id="Docker-정보-조회"><a href="#Docker-정보-조회" class="headerlink" title="Docker 정보 조회"></a>Docker 정보 조회</h3><p>설치된 Docker에 대해 자세히 알고 싶을 때 사용하는 명령어이다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker info</span><br></pre></td></tr></table></figure>
-
-<h3 id="컨테이너-목록을-확인하기"><a href="#컨테이너-목록을-확인하기" class="headerlink" title="컨테이너 목록을 확인하기"></a>컨테이너 목록을 확인하기</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps [OPTIONS]</span><br></pre></td></tr></table></figure>
-
-<h3 id="실행-중인-컨테이너-중지하기"><a href="#실행-중인-컨테이너-중지하기" class="headerlink" title="실행 중인 컨테이너 중지하기"></a>실행 중인 컨테이너 중지하기</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop [OPTIONS] CONTAINER [CONTAINER ID]</span><br></pre></td></tr></table></figure>
-
+<h2 id="Docker-명령어"><a href="#Docker-명령어" class="headerlink" title="Docker 명령어"></a>Docker 명령어</h2><h3 id="Docker-정보-조회"><a href="#Docker-정보-조회" class="headerlink" title="Docker 정보 조회"></a>Docker 정보 조회</h3><blockquote>
+<p><code>docker info</code></p>
+</blockquote>
+<p>설치된 Docker에 대해 자세히 알고 싶을 때 사용하는 명령어이다.</p>
+<h3 id="컨테이너-목록을-확인하기"><a href="#컨테이너-목록을-확인하기" class="headerlink" title="컨테이너 목록을 확인하기"></a>컨테이너 목록을 확인하기</h3><blockquote>
+<p><code>docker ps [OPTIONS]</code></p>
+</blockquote>
+<h3 id="실행-중인-컨테이너-중지하기"><a href="#실행-중인-컨테이너-중지하기" class="headerlink" title="실행 중인 컨테이너 중지하기"></a>실행 중인 컨테이너 중지하기</h3><blockquote>
+<p><code>docker stop [OPTIONS] CONTAINER [CONTAINER ID]</code></p>
+</blockquote>
 <p>컨테이너의 ID를 알면 해당 컨테이너를 중지시킬 수 있다.</p>
-<h3 id="컨테이너-제거하기"><a href="#컨테이너-제거하기" class="headerlink" title="컨테이너 제거하기"></a>컨테이너 제거하기</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rm [OPTIONS] CONTAINER [CONTAINER ID]</span><br></pre></td></tr></table></figure>
-
+<h3 id="컨테이너-제거하기"><a href="#컨테이너-제거하기" class="headerlink" title="컨테이너 제거하기"></a>컨테이너 제거하기</h3><blockquote>
+<p><code>docker rm [OPTIONS] CONTAINER [CONTAINER ID]</code></p>
+</blockquote>
 <p>마찬가지로 컨테이너의 ID를 알면 해당 컨테이너를 제거할 수 있다.</p>
-<h3 id="이미지-목록-확인하기"><a href="#이미지-목록-확인하기" class="headerlink" title="이미지 목록 확인하기"></a>이미지 목록 확인하기</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images [OPTIONS]</span><br></pre></td></tr></table></figure>
-
-<h3 id="이미지-다운로드-하기"><a href="#이미지-다운로드-하기" class="headerlink" title="이미지 다운로드 하기"></a>이미지 다운로드 하기</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull [OPTIONS] NAME[:TAG]</span><br></pre></td></tr></table></figure>
-
-<h3 id="이미지-삭제하기"><a href="#이미지-삭제하기" class="headerlink" title="이미지 삭제하기"></a>이미지 삭제하기</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rmi [OPTIONS] IMAGE [IMAGE ID]</span><br></pre></td></tr></table></figure>
-
-<h3 id="컨테이너-로그-보기"><a href="#컨테이너-로그-보기" class="headerlink" title="컨테이너 로그 보기"></a>컨테이너 로그 보기</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker logs [OPTIONS] CONTAINER</span><br></pre></td></tr></table></figure>
-
-<h3 id="컨테이너에-접근하기"><a href="#컨테이너에-접근하기" class="headerlink" title="컨테이너에 접근하기"></a>컨테이너에 접근하기</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> [OPTIONS] CONTAINER [ARG...]</span><br></pre></td></tr></table></figure>
-
+<h3 id="이미지-목록-확인하기"><a href="#이미지-목록-확인하기" class="headerlink" title="이미지 목록 확인하기"></a>이미지 목록 확인하기</h3><blockquote>
+<p><code>docker images [OPTIONS]</code></p>
+</blockquote>
+<h3 id="이미지-다운로드-하기"><a href="#이미지-다운로드-하기" class="headerlink" title="이미지 다운로드 하기"></a>이미지 다운로드 하기</h3><blockquote>
+<p><code>docker pull [OPTIONS] NAME[:TAG]</code></p>
+</blockquote>
+<h3 id="이미지-삭제하기"><a href="#이미지-삭제하기" class="headerlink" title="이미지 삭제하기"></a>이미지 삭제하기</h3><blockquote>
+<p><code>docker rmi [OPTIONS] IMAGE [IMAGE ID]</code></p>
+</blockquote>
+<h3 id="컨테이너-로그-보기"><a href="#컨테이너-로그-보기" class="headerlink" title="컨테이너 로그 보기"></a>컨테이너 로그 보기</h3><blockquote>
+<p><code>docker logs [OPTIONS] CONTAINER</code></p>
+</blockquote>
+<h3 id="컨테이너에-접근하기"><a href="#컨테이너에-접근하기" class="headerlink" title="컨테이너에 접근하기"></a>컨테이너에 접근하기</h3><blockquote>
+<p><code>docker exec [OPTIONS] CONTAINER [ARG...]</code></p>
+</blockquote>
 <p>현재 실행중인 <code>ubuntu</code>에 접근한다고 가정하면 아래와 같이 입력하면 된다.<br>터미널을 사용하는 것과 같이 접근이 가능해서 자유롭게 명령어를 실행하고 심지어 패키지도 설치할 수 있다.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it ubuntu /bin/bash</span><br></pre></td></tr></table></figure>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2021-03-23T08:32:32.000Z" title="2021-03-23T08:32:32.000Z">2021-03-23</time><span class="level-item"><a class="link-muted" href="/categories/Docker/">Docker</a></span><span class="level-item">7분 읽기 (대략 1080 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/03/23/docker-001/">Docker</a></h1><div class="content"><div align=center>
