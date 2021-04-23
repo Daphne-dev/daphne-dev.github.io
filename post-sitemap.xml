@@ -9,6 +9,14 @@
 
 
     <url>
+        <loc>https://daphne-dev.github.io/2021/04/15/git-config-file/</loc>
+        <lastmod>2021-04-23T02:49:24.297Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://daphne-dev.github.io/2021/04/19/clean-code-001/</loc>
         <lastmod>2021-04-21T01:51:02.580Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1483,14 +1491,6 @@
     <url>
         <loc>https://daphne-dev.github.io/2020/08/16/algo-002/</loc>
         <lastmod>2021-04-16T05:20:36.207Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://daphne-dev.github.io/2021/04/15/git-config-file/</loc>
-        <lastmod>2021-04-16T05:17:50.672Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
